@@ -80,10 +80,11 @@ body {
     grid-template-columns: 100%;
     grid-template-rows:auto;
     grid-template-areas: 
+    "header"
     "nav"
     "main"
-    "header"
-    "footer";
+    "footer"
+    ;
 }
 
                     /* index grid */
@@ -161,6 +162,7 @@ header ul {
     align-content: center;
     flex-direction: row;
 }
+
 .li__social {
     display: flex;
     justify-content: flex-end;
@@ -211,13 +213,16 @@ header ul {
                   
 .grid__container {
     display: grid;
-    justify-content: center;
-    /* width: 80%; */
-    grid-template-rows: 1fr 1fr 1fr;
+    width: 80%;
     grid-template-columns: repeat( 3, 1fr);
+    grid-template-rows: repeat( 5, 1fr);
+    justify-items: stretch;
+    justify-content: space-around;
+    margin: 0 auto;
     
 }
 .grid__item {
+    display: flex;
     box-sizing: border-box;
     background-color: red;
     border: 3px solid white;
@@ -225,8 +230,15 @@ header ul {
     align-content:center;
 }
 .item1 {
-    grid-column: 1/3;
+    grid-column: 1/2;
     grid-row: 1/3;
+}
+.grid__img {
+    
+}
+.item10 {
+    grid-column: 3/4;
+    grid-row: 4/6;
 }
 
 .container__main {
@@ -368,7 +380,7 @@ footer p {
 }
                     /* Media queries index */
 
-@media (max-width: 1200px) {
+@media (max-width: 1241px) {
     body {
         display: grid;
         gap: 10px;
@@ -379,6 +391,25 @@ footer p {
         "main"
         "header"
         "footer";
+    }
+    .div__nav {
+        justify-content: center;
+        width: 50%;
+    }
+    .nav__nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: flex-start;
+        background-color: black;
+        border: 1px solid rgb(36, 7, 224);
+        width: 95%;
+        height: fit-content;
+        padding: 5px;
+    }
+    .nav__nav__nav {
+        width: 40%;
+        text-align: center;
     }
                 /* media queries reserva tu lugar */
 }
@@ -412,11 +443,13 @@ footer p {
         margin-bottom: 30px;
         padding: 60px;
     }
+    .nav__nav__nav {
+        width: 70%;
+    }
     .grid__container{
         display: flex;
         flex-wrap: wrap;
-        width:720px;
-        height: 100px;
+        width: 100%;
         justify-content: center;
         grid-template-rows: 2fr 1fr 1fr;
         grid-template-columns: repeat( 3, 1fr);
@@ -560,7 +593,7 @@ section div ul li {
 .main__reserva {
     display: grid;
     flex-wrap: wrap;
-    background-color: black;
+    background: linear-gradient(to bottom right, black, #282828);
     border: 1px solid rgb(36, 7, 224);
     text-decoration: underline;
     font-size: 2em;
@@ -605,10 +638,14 @@ section div ul li {
     min-width: 320px;
 }
 .button__reserva {
-    position: relative;
-    background-color: blue;
-    border: 3px solid black;
-    font-size: 30px;
+    background-color: rgb(36, 7, 224);
+    border: 4px solid black;
+    border-radius: 10px;
+    padding: 5px;
+    margin-top: 50px;
+}
+.button__reserva a {
+   color: white;
 }
 .reserva__qr {
     display: flex;
@@ -634,6 +671,10 @@ section div ul li {
         padding: 25px;
         justify-content: space-around;
     }
+    .reserva__qr {
+        display: flex;
+        flex-direction: row;
+    }
 }
 @media (max-width: 768px){
     .reserva__qr {
@@ -644,6 +685,7 @@ section div ul li {
         border: 1px ridge white;
     }
 }
+
                     /* Pagina 4 */
                     /* Quienes somos */
 
@@ -674,11 +716,11 @@ section div ul li {
       
 }
 .quienessomos__p /* p ambos section */{
-    width: 400px;
+    width: 70%;
     margin: auto auto;
     background-color: black;
     border: 1px solid black;
-    padding: 5px;
+    padding: 25px;
     box-shadow: 0px 0px 3px 0px white;
       
 }
@@ -696,7 +738,27 @@ iframe {
     display: flex;
     flex-wrap: wrap;
 }
-
+.section__dos__quienessomos p {
+    padding: 25px;
+    color: white;
+}
+                    /* quienes somos media queris */
+@media (max-width: 1200px) {
+    .section__uno__quienessomos {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .quienessomos__p {
+        margin-top: 100px;
+    }
+    .section__dos__quienessomos {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        width: 100%;
+    }
+}
                     /* Pagina 5 */
                     /* Contacto */
 
