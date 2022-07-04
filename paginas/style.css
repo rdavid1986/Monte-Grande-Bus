@@ -24,12 +24,7 @@ li {
     list-style: none;
     color: white;
 }
-.div__direccion  > ul > li {
-    color: black;
-}
-.div__direccion__dos > ul > li {
-    color: black;
-}
+
 a {
     color: black;
     text-decoration: none;
@@ -164,9 +159,6 @@ header ul {
 }
 
 .li__social {
-    display: flex;
-    justify-content: flex-end;
-    align-content: center;
     margin-right: 60px;
 }
 
@@ -209,69 +201,73 @@ header ul {
 }
 
                     /* Main index */
-
                   
 .grid__container {
     display: grid;
-    width: 80%;
-    grid-template-columns: repeat( 3, 1fr);
-    grid-template-rows: repeat( 5, 1fr);
-    justify-items: stretch;
-    justify-content: space-around;
+    width:80%;
     margin: 0 auto;
-    
-}
-.grid__item {
-    display: flex;
-    box-sizing: border-box;
-    background-color: red;
+    grid-template-columns: repeat( 3, 1fr);
+    grid-auto-rows: 250px;
+    padding: 20px;
+    gap: 20px;
     border: 3px solid white;
-    justify-content:center;
-    align-content:center;
+    background-color:black;
 }
-.item1 {
-    grid-column: 1/2;
-    grid-row: 1/3;
+
+.img__galeria {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 3px solid white;
 }
-.grid__img {
-    
+
+.grid__item:first-child {
+    grid-row-start: span 3;
 }
-.item10 {
-    grid-column: 3/4;
-    grid-row: 4/6;
+.grid__item:nth-child(2) {
+    grid-row-start: span 2 ;
+}
+.grid__item:nth-child(3) {
+    grid-row-start: span 3 ;
+}
+.grid__item:nth-child(4) {
+    grid-row-start: span 2 ;
+}
+.grid__item:nth-child(7) {
+    grid-column-start: span 2;
+    grid-row-start: span 2 ;
+}
+.grid__item:nth-child(8) {
+    grid-row-start: span 2 ;
+}
+.grid__item:nth-child(9) {
+    grid-row-start: span 2 ;
+}
+.grid__item:nth-child(11) {
+    grid-row-start: span 2 ;
 }
 
 .container__main {
     background: linear-gradient(to bottom right, black, #282828);
-    border-radius: 10px;
-    box-sizing: border-box;
+    border: 3px solid white;
     box-shadow: 0px 0px 3px 0px white;
     text-align: center;
-    width: 85%;
-    height: 85%;
-    padding: 15px;
-    margin: auto auto;
+    width: 100%;
+    height: 100%;
 }
 .container__main__dos {
     background: linear-gradient(to bottom right, black, #282828);
-    border-radius: 10px;
+    border: 3px solid white;
     box-sizing: border-box;
     box-shadow: 0px 0px 3px 0px white;
     text-align: center;
-    width: 85%;
-    height: 85%;
+    width: 100%;
+    height: 100%;
     padding: 15px;
-    margin: auto auto;
 }
-/* .p__main__right {
-} */
-/* .button__grid {
-    
-} */
-    /* boton general */
 .button__grid {
     color: white;
-    background-color:rgb(36, 7, 224);
+    background-color:rgb(7 24 224);;
     border: 4px solid black;
     border-radius: 10px;
     padding: 5px;
@@ -282,7 +278,6 @@ header ul {
     border: 4px solid black;
     border-radius: 10px;
     padding: 5px;
-    margin-top: 20%;
 }
 .button__grid a {
     color:white;
@@ -290,30 +285,65 @@ header ul {
 .button__grid__dos a {
     color:white;
 }
-                    /* seccion main 2 */
+@media (max-width: 1241px) {
+    .grid__container {
+        grid-template-columns: repeat( 2, 1fr);
+        grid-auto-rows: 250px;
+    }
+    .button__grid{
+        margin-top: 20px;
+    }
+}
+@media (max-width: 768px) {
+    .grid__container {
+        grid-template-columns: repeat( 2, 1fr);
+        grid-auto-rows: auto;
+        gap: 1px;
+        width: 100%;
+    }
+    .container__main {
+        text-align: center;
+        width: 98%;
+        height: 95%;
+        font-size: 16px;
+    }
+    .container__main {
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+    }
+    .p__main__right {
+        text-align: center;
+        margin-top: 30px;
+        font-size: 1rem;
+    }
+    .button__grid{
+        font-size: 1,5em;
+        margin-top: 50px;
+    }
+    .grid__item:nth-child(5){
+        grid-row-start: span 2;
+    }
+    .grid__item:nth-child(6){
+        grid-row-start: span 2;
+    }
+    .container__main__dos {
+        width: 100%;
+        height: 102%;
+    }
+}
 
-.section__main__dos {
-    display: flex;
-    flex-wrap: wrap;
+@media (max-width: 550px) {
+    .grid__container {
+        display: flex;
+        flex-direction: column;
+    
+    }
 }
-.container__main__dos {
-    background: linear-gradient(to bottom right, black, #282828);
-    border-radius: 10px;
-    box-shadow: 0px 0px 3px 0px white;
-    text-align: center;
-    padding: 15px;
-}
+
                    /* seccion main 2 */
 
-.section__main__dos {
-    display: flex;
-    flex-wrap: wrap;
-}
-/* .p__main__center {
-} */
-
-/* .p__main__center {
-} */
 .button__dos {
     background-color:rgb(36, 7, 224);
     color: white;
@@ -335,7 +365,7 @@ header ul {
     flex-wrap: wrap;
     align-content: center;
     justify-content: center;
-    background-color: white;
+    background-color: black;
     border: 2px solid rgb(36, 7, 224);
     width: 90%;
     height: auto;
@@ -344,8 +374,8 @@ header ul {
 }
                     
 footer p {
-    color: black;
     margin-top: 30px;
+    background-color: black;
 }
 
 .container__direccion {
@@ -446,25 +476,11 @@ footer p {
     .nav__nav__nav {
         width: 70%;
     }
-    .grid__container{
-        display: flex;
-        flex-wrap: wrap;
-        width: 100%;
-        justify-content: center;
-        grid-template-rows: 2fr 1fr 1fr;
-        grid-template-columns: repeat( 3, 1fr);
-    }
-    .grid__item {
-        background-color: yellow;
-        width: inherit;
-        height: 320px;
-    }
     .footer {
         display: flex;
         flex-wrap: wrap;
         align-content: center;
         justify-content: center;
-        background-color: white;
         border: 2px solid rgb(36, 7, 224);
         width: 100%;
         height: auto;
@@ -483,12 +499,6 @@ footer p {
         "main"
         "header"
         "footer";
-    }
-    .grid__item{
-        background-color: green;
-        display: flex;
-        flex-wrap: wrap;
-        width: inherit;
     }
     .footer {
         display: flex;
@@ -513,10 +523,6 @@ footer p {
     width: 100px;
     align-items: center;
 }
-footer div ul li {
-    color: black;
-}
-
 
                     /* Pagina 2 */
                     /* Recorridos */
@@ -531,6 +537,18 @@ h1 {
     margin-top: 90px;
     text-align: center;
     margin-bottom: 30px;
+}
+.main__recorridos {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.correo {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 .h2 {
     background-color: black;
@@ -560,15 +578,55 @@ h1 {
     background-image: url('../img/av9dejulio.jpg');
     background-size: cover;
     margin: auto 0px;
-    width: 40%;
-}
-.ul__recorrido /* Ambos section div ul */ {
     padding: 15px;
-    font-size: 2em;
-    min-width: 320px;
+    border-style: double; 
+    border-width: 4px;
     border: 1px ridge white;
-    border-style: double; border-width: 4px;
+    border-width: 4px;
 }
+@media (min-width: 1200px) {
+    .main__recorridos {
+        display: flex;
+        flex-direction: column;
+    }
+}
+.recorrido__correo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.lista__recorrido__correo {
+    background-image: url('../img/av9dejulio.jpg');
+    background-size: cover;
+    margin: auto 0px;
+    padding: 15px;
+    border-style: double; 
+    border-width: 4px;
+    border: 1px ridge white;
+    border-width: 4px;
+}
+@media (max-width: 550px) {
+    .ul__recorrido /* Ambos section div ul */ {
+        border: 1px ridge white;
+        max-width: 100%;
+        border-style: double; 
+        border-width: 4px;
+        border: 1px ridge white;
+        border-width: 4px;
+    }
+}
+@media (min-width: 1200px){
+    .recorrido__correo {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: stretch;
+    }
+}
+
+
 
                     /* Correo */
 .correo {
@@ -580,8 +638,6 @@ h1 {
 .lista__recorrido__correo {
     background-image: url('../img/montegrande.jpg');
     background-position: center;
-    margin: auto 0px;
-    width: 40%;
 }
 section div ul li {
     color: rgb(249, 251, 251);
@@ -591,17 +647,10 @@ section div ul li {
                     /* Reserva tu lugar */
 
 .main__reserva {
-    display: grid;
-    flex-wrap: wrap;
-    background: linear-gradient(to bottom right, black, #282828);
-    border: 1px solid rgb(36, 7, 224);
-    text-decoration: underline;
-    font-size: 2em;
-    color: white;
-    text-align: center;
-    padding: 5px;
-    margin: auto auto;
-    width: 92%;
+       background: linear-gradient(to bottom right, black, #282828);
+       border: 1px solid rgb(36, 7, 224);
+       text-decoration: underline;
+       flex-direction: column;
 }
 .container__reserva {
     display: flex;
@@ -609,6 +658,10 @@ section div ul li {
     margin: 50px 0 50px 50px;
     justify-content: space-between;
     
+}
+.ul__recorrido li{
+    font-weight: bold;
+    text-shadow: 3 px 3 px 3px white;
 }
 .container__reserva__img {
     display: flex;
@@ -636,6 +689,7 @@ section div ul li {
 .reserva__p {
     font-size: 30px;
     min-width: 320px;
+    padding: 10px;
 }
 .button__reserva {
     background-color: rgb(36, 7, 224);
@@ -689,9 +743,9 @@ section div ul li {
                     /* Pagina 4 */
                     /* Quienes somos */
 
-/* .main__quienessomos {
-    
-} */
+.main__quienessomos {
+    justify-content: space-around;
+}
 /* .quienesomos__h1 {
 
 } */
@@ -700,29 +754,23 @@ section div ul li {
     flex-wrap: wrap;
 }
 .quienessomos__img /* img ambos section */{
-    margin: auto auto;
     width: fit-content;
     margin: auto auto;
-    background-color: black;
-    border: 1px solid black;
     padding: 5px;
-    box-shadow: 0px 0px 3px 0px white;
 }
 .mgbcombi {
-    width: 700px;
+    width: 100%;
     border: 1px solid black;
     padding: 5px;
     box-shadow: 0px 0px 3px 0px white;
       
 }
 .quienessomos__p /* p ambos section */{
-    width: 70%;
+    width: 100%;
     margin: auto auto;
-    background-color: black;
     border: 1px solid black;
     padding: 25px;
     box-shadow: 0px 0px 3px 0px white;
-      
 }
 .quienessomos__iframe/* iframe ambos section */ {
     width: 100%;
@@ -743,7 +791,15 @@ iframe {
     color: white;
 }
                     /* quienes somos media queris */
-@media (max-width: 1200px) {
+                    
+@media (min-width: 1200px) {
+    
+    .main__quienessomos {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        width: 100%;
+    }
     .section__uno__quienessomos {
         display: flex;
         flex-wrap: wrap;
@@ -751,12 +807,34 @@ iframe {
     }
     .quienessomos__p {
         margin-top: 100px;
+        width: 70%;
+        background: black;
     }
     .section__dos__quienessomos {
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
         width: 100%;
+    }
+}
+@media (min-width: 768px){
+    .main__quienessomos {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        width: 100%;
+    }
+    .quienessomos__p {
+        margin-top: 100px;
+        width: 70%;
+        background: black;
+    }
+}
+@media (min-width: 310px){
+    .quienessomos__p {
+        margin-top: 100px;
+        width: 70%;
+        background: black;
     }
 }
                     /* Pagina 5 */
