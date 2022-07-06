@@ -50,7 +50,6 @@ p {
 }
 .logo-playstore {
     width: 200px;
-    margin: 10px;
 }
 .variascombis {
     /* min-width: 320px; */
@@ -141,11 +140,12 @@ header ul {
     justify-content: space-evenly;
     background: linear-gradient(to bottom right, black, #282828);
     width: 100%;
+    height: 130px;
     margin-top: 50px;
     border: 1px solid rgb(36, 7, 224);
 }
 .div__img__logo__mgb {
-    margin: 30px 0;
+    margin: 30px auto;
 }
 
                     /* social header */
@@ -156,10 +156,12 @@ header ul {
     justify-content: space-evenly;
     align-content: center;
     flex-direction: row;
+    margin: 30px auto;
 }
 
 .li__social {
     margin-right: 60px;
+    margin-bottom: 30px;
 }
 
                     /* nav */
@@ -289,20 +291,34 @@ header ul {
     color:white;
 }
 @media (max-width: 1241px) {
-    .grid__container {
-        grid-template-columns: repeat( 2, 1fr);
-        grid-auto-rows: 250px;
+    .nav__social {
+        margin: 30px auto;
     }
     .button__grid{
         margin-top: 20px;
     }
 }
 @media (max-width: 768px) {
+    .container__header {
+        display: grid;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        background: linear-gradient(to bottom right, black, #282828);
+        width: 100%;
+        margin-top: 50px;
+        border: 1px solid rgb(36, 7, 224);
+        justify-items: end;
+    }
+    .nav__social {
+        display: flex;
+        justify-content: space-evenly;
+        align-content: center;
+        flex-direction: row;
+    }
     .grid__container {
         grid-template-columns: repeat( 2, 1fr);
-        grid-auto-rows: auto;
+        grid-auto-rows: 150px;
         gap: 1px;
-        width: 100%;
     }
     .container__main {
         text-align: center;
@@ -338,13 +354,38 @@ header ul {
 }
 
 @media (max-width: 550px) {
+    body {
+        display: grid;
+        gap: 10px;
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "nav"
+            "main"
+            "header"
+            "footer";
+    }
+    .nav__social {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        margin-left: 50px;
+    }
+
     .grid__container {
         display: flex;
         flex-direction: column;
-    
     }
 }
-
+@media (max-width: 350px){
+    .nav__social {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: 0 auto;
+    }
+}
                    /* seccion main 2 */
 
 .button__dos {
@@ -425,6 +466,16 @@ footer p {
         "header"
         "footer";
     }
+    .container__header {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        background: linear-gradient(to bottom right, black, #282828);
+        width: 100%;
+        height: auto;
+        margin-top: 50px;
+        border: 1px solid rgb(36, 7, 224);
+    }
     .div__nav {
         justify-content: center;
         width: 50%;
@@ -485,8 +536,8 @@ footer p {
         align-content: center;
         justify-content: center;
         border: 2px solid rgb(36, 7, 224);
-        width: 100%;
         height: auto;
+        width: 300px;
         margin: 50px auto;
         padding: 20px;
     }
@@ -494,25 +545,33 @@ footer p {
 @media (max-width: 400px) {
     body {
         display: grid;
+        justify-items: stretch;
         gap: 10px;
         grid-template-columns: 100%;
         grid-template-rows:auto;
         grid-template-areas: 
+        "header"
         "nav"
         "main"
-        "header"
         "footer";
+    }
+    .div__img__logo__mgb {
+        margin-top: 30px;
+    }
+    .nav__social {
+        margin: 0 auto;
+    }
+    .li__social {
+        margin: 5px;
     }
     .footer {
         display: flex;
         flex-wrap: wrap;
         align-content: center;
         justify-content: center;
-        background-color: white;
         border: 2px solid rgb(36, 7, 224);
         height: auto;
-        margin: 50px auto;
-        padding: 20px;
+        width: 250px;
     }
 }
                     /* footer social */
@@ -523,8 +582,12 @@ footer p {
     justify-content: space-between;
 }
 .footer__li {
-    width: 100px;
+    width: 200px;
     align-items: center;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 
                     /* Pagina 2 */
