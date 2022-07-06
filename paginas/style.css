@@ -220,7 +220,10 @@ header ul {
     object-fit: cover;
     border: 3px solid white;
 }
-
+.grid__item:hover {
+    transform: scale(1.5);
+    transition: all 1.5s;
+}
 .grid__item:first-child {
     grid-row-start: span 3;
 }
@@ -589,12 +592,20 @@ h1 {
         display: flex;
         flex-direction: column;
     }
+    .recorrido__correo {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: stretch;
+    }
 }
 .recorrido__correo {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-direction: column;
+    align-content: space-around;
 }
 .lista__recorrido__correo {
     background-image: url('../img/av9dejulio.jpg');
@@ -616,15 +627,6 @@ h1 {
         border-width: 4px;
     }
 }
-@media (min-width: 1200px){
-    .recorrido__correo {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        justify-content: center;
-        align-items: stretch;
-    }
-}
 
 
 
@@ -638,6 +640,20 @@ h1 {
 .lista__recorrido__correo {
     background-image: url('../img/montegrande.jpg');
     background-position: center;
+    margin-top: 60px;
+}
+@media (min-width: 1200px){
+    .lista__recorrido__correo {
+        background-image: url(../img/montegrande.jpg);
+        background-position: center;
+    }
+}
+@media (min-width: 768px){
+    .lista__recorrido__correo {
+        background-image: url(../img/montegrande.jpg);
+        background-position: center;
+        margin: auto;
+    }
 }
 section div ul li {
     color: rgb(249, 251, 251);
