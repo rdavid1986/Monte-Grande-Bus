@@ -40,10 +40,7 @@ p {
 .logomgb {
     width: 320px;
 }
-.seguinos {
-    border: 3px solid white;
-    border-radius:25%;
-}
+
 .logo-facebook {
     border-radius: 50%;
     width: 60px;
@@ -206,8 +203,9 @@ header ul {
     padding: 0 20px;
 }
 .nav__item:hover {
-    transform: scale(2);
-    transition: 2.5s;
+    transform: scale(1.5);
+    transition: 1.5s;
+    background-color: gray;
 }
 
                     /* Main index */
@@ -657,7 +655,7 @@ h1 {
     margin-bottom: 60px;
 }
 .mapa__recorrido__bv:hover {
-    transform: scale(2);
+    transform: scale(1.5);
     transition: 2.5s;
 }
 
@@ -677,7 +675,7 @@ h1 {
     border-width: 4px;
 }
 .lista__recorrido__bv:hover {
-    transform: scale(2);
+    transform: scale(1.5);
     transition: 2.5s;
 }
 @media (min-width: 1200px) {
@@ -736,11 +734,11 @@ h1 {
     margin-top: 60px;
 }
 .mapa__recorrido__correo:hover {
-    transform: scale(2);
+    transform: scale(1.5);
     transition: 2.5s;
 }
 .lista__recorrido__correo:hover {
-    transform: scale(2);
+    transform: scale(1.5);
     transition: 2.5s;
 }
 @media (min-width: 1200px){
