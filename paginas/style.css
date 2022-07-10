@@ -8,18 +8,19 @@ html {
 body {
     min-height: 100%;
     font-family: "Helvetica Neue",Helvetica;
+    height: 100%;
     width: 100%;
     margin: 0 auto;
-    background-color: rgb(2, 2, 84);
+    background-color: black;
 }
 li a img {
     width: 60px;
     height: 60px;
 }
-hr {
+/* hr {
     margin-top: 60px;
     margin-bottom: 60px;
-}
+} */
 li {
     list-style: none;
     color: white;
@@ -128,22 +129,22 @@ header {
     flex-wrap: wrap;
     justify-content: center;
 }
-header ul {
+/* header ul {
     display: flex;
     flex-wrap: wrap;
     align-content: center;
     justify-content: space-around;
-}
+} */
 
 .container__header {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    background: linear-gradient(to bottom right, black, #282828);
+    background: linear-gradient(to bottom right, white,white,white, #1fafd1, #05138e,#05138ec2);
     width: 100%;
     height: 130px;
-    margin-top: 50px;
     border: 1px solid rgb(36, 7, 224);
+    margin-bottom: 5px;
 }
 .div__img__logo__mgb {
     margin: 30px auto;
@@ -1005,3 +1006,55 @@ iframe {
     background: #20297c;
     color: rgb(246 246 247);
 } */
+.nav {
+    background-color: rgb(0, 0, 0);
+    background-image: url(../img/navobelisco3.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 1800px 600px;
+}
+/* .nav>background {
+    width:300px;
+    height: 600px;
+} */
+ .nav-tabs>.nav-item>.nav-link{
+    color: rgb(250, 250, 250);
+}
+.nav-tabs .nav-link.active {
+    background-image: url("../img/fondocolorlogo.jpg") ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 200px 50px;
+    width: 200px;
+    text-align: center;
+}
+
+.nav-tabs {
+    padding-top: 560px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.nav-link {
+    padding: 5px;
+    margin-bottom : 40px;
+}
+.nav-item>a.active {
+    color: aqua;
+}
+.tab-content>.active {
+    display: none;
+}
+
+                    /* footer */
+
+#empresa__footer {
+    color: white;
+}
+.rights {
+    color : white;
+}
+.footer__menu {
+    color: white;
+   
+}
