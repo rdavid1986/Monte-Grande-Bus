@@ -940,6 +940,49 @@ iframe {
 .direccion__caba {
     display: flex;
 }
+.boton__consultar {
+    top: 100;
+    position: absolute;
+    bottom: 10px;
+    right: 5px;
+    left: 5px;
+}
+/* grid index */
+.card {
+    background-image: url("../img/contratanos-300x230.png");
+    background-repeat: no-repeat;
+    background-position: top;
+    object-fit: cover;
+}
+.card-text {
+    color: black;
+    text-align: center;
+}
+/* main carrousel de quienes somos */
+
+.carousel {
+    margin:50px;
+}
+.carousel-item {
+    position: relative;
+    display: none;
+    float: left;
+    width: 100%;
+    margin-right: -100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transition: transform .5s ease-in-out;
+}
+
+/* servicos */
+
+.container__servicios {
+    margin-top: 50px;
+    color: white;
+}
+.container__rows {
+    margin-bottom: 50px;
+}
                     /* Media queries index */
 
 @media (max-width: 1241px) {
