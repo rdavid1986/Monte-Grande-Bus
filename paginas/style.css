@@ -203,12 +203,12 @@ header {
     margin-bottom: 16px;
     padding: 0 20px;
 }
-.nav__item:hover {
+/* .nav__item:hover {
     transform: scale(1.5);
     transition: 1.5s;
     background-color: gray;
 }
-
+ */
                     /* Main index */
                   
 .grid__container {
@@ -229,10 +229,10 @@ header {
     object-fit: cover;
     border: 3px solid white;
 }
-.grid__item:hover {
+/* .grid__item:hover {
     transform: scale(1.5);
     transition: all 1.5s;
-}
+} */
 .grid__item:first-child {
     grid-row-start: span 3;
 }
@@ -268,8 +268,9 @@ header {
     height: 100%;
 }
 .container__main__dos {
-    background: linear-gradient(to bottom right, black, #282828);
+    background: white;
     border: 3px solid white;
+    border-radius: 10px;
     box-sizing: border-box;
     box-shadow: 0px 0px 3px 0px white;
     text-align: center;
@@ -277,6 +278,10 @@ header {
     height: 100%;
     padding: 15px;
 }
+.container__main__dos>p {
+    color: black;
+}
+
 .button__grid {
     color: white;
     background-color:rgb(7 24 224);;
@@ -510,10 +515,10 @@ h1 {
 .mapa__recorrido__bv  {
     margin-bottom: 60px;
 }
-.mapa__recorrido__bv:hover {
+/* .mapa__recorrido__bv:hover {
     transform: scale(1.5);
     transition: 2.5s;
-}
+} */
 
 .img__mapa {
     border: 1px solid black;
@@ -530,10 +535,10 @@ h1 {
     border: 1px ridge white;
     border-width: 4px;
 }
-.lista__recorrido__bv:hover {
+/* .lista__recorrido__bv:hover {
     transform: scale(1.5);
     transition: 2.5s;
-}
+} */
 @media (min-width: 1200px) {
     .main__recorridos {
         display: flex;
@@ -589,14 +594,14 @@ h1 {
     background-position: center;
     margin-top: 60px;
 }
-.mapa__recorrido__correo:hover {
+/* .mapa__recorrido__correo:hover {
     transform: scale(1.5);
     transition: 2.5s;
-}
-.lista__recorrido__correo:hover {
+} */
+/* .lista__recorrido__correo:hover {
     transform: scale(1.5);
     transition: 2.5s;
-}
+} */
 @media (min-width: 1200px){
     .lista__recorrido__correo {
         background-image: url(../img/montegrande.jpg);
@@ -620,13 +625,11 @@ section div ul li {
 .main__reserva {
     background: linear-gradient(to bottom right, #1fafd1, #05138e,#05138ec2,#1fafd1);
     border: 2px solid rgb(36, 7, 224);
-    text-decoration: underline;
     flex-direction: column;
 }
 .container__reserva {
     display: flex;
-    flex-wrap: wrap;
-    margin: 50px 0 50px 50px;
+    flex-wrap: nowrap;
     justify-content: space-between;
     
 }
@@ -653,16 +656,19 @@ section div ul li {
 }
 .container__reserva__p {
         margin-top: 50px;
-        width: 320px;
-}
+        width: 80%;
+        display: inline-grid;
+        align-items: center;
+        justify-items: center;
+    }
 .reserva__p {
-    font-size: 30px;
-    min-width: 320px;
-    padding: 10px;
+padding: 90px;
 }
 .button__reserva {
-    background-color: rgb(36, 7, 224);
-    border: 4px solid black;
+    background: linear-gradient(to bottom right, #1fafd1, #05138e,#05138ec2,#1fafd1);
+    border-image: linear-gradient(to bottom right, #1fafd1, #05138e,#05138ec2,#1fafd1);
+    border-width: 4px;
+    border-style: solid;
     border-radius: 10px;
     padding: 5px;
     margin-top: 50px;
@@ -689,6 +695,9 @@ section div ul li {
 @media (max-width: 1200px){
     .container__reserva {
         border: 1px ridge white;
+        padding: 20px;
+        margin: 0;
+        justify-content: center;
     }
     .reserva__qr {
         display: flex;
@@ -707,7 +716,11 @@ section div ul li {
 
                     /* Pagina 4 */
                     /* Quienes somos */
-
+.container__main__quienes__somos {
+    background: linear-gradient(to bottom right, #1fafd1, #05138e,#05138ec2,#1fafd1);
+    margin: 50px;
+    border: 1px solid blue;
+}
 .main__quienessomos {
     justify-content: space-around;
 }
@@ -733,11 +746,13 @@ section div ul li {
 .quienessomos__p /* p ambos section */{
     width: 100%;
     margin: auto auto;
-    border: 1px solid black;
+    border: 1px solid blue;
     padding: 25px;
     box-shadow: 0px 0px 3px 0px white;
 }
 .quienessomos__iframe/* iframe ambos section */ {
+    border-top: 2px solid blue;
+    border-bottom: 2px solid blue;
     width: 100%;
     height: 350px;
     margin: 60px 0;
@@ -934,7 +949,6 @@ iframe {
     display: flex;
 }
 .boton__consultar {
-    top: 100;
     position: absolute;
     bottom: 10px;
     right: 5px;
@@ -954,8 +968,8 @@ iframe {
 
                 /* main carrousel de quienes somos */
 
-.carousel {
-    margin:50px;
+.carousel-item {
+    border: 2px solid rgb(1, 1, 175);
 }
 .carousel-item {
     position: relative;
