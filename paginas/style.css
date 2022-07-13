@@ -209,6 +209,18 @@ header {
     background-color: gray;
 }
  */
+/*  .nav__desktop {
+    display: none;
+ }
+ nav__desktop ul {
+    list-style: none;
+ }
+ /* media queris nav */
+/*  @medias only screen and ( min-width: 768px ) {
+    nav__desktop {
+        display: block;
+    }
+ } */ 
                     /* Main index */
                   
 .grid__container {
