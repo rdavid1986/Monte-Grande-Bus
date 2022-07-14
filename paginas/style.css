@@ -692,9 +692,6 @@ section div ul li {
     padding: 20px;
     margin: 30px;
 }
-.reserva__qr__img>img {
-   /*  width: 80%; */
-}
 .main__reserva__h1 {
     margin-top: 50px;
 }
@@ -832,28 +829,12 @@ iframe {
                     /* Pagina 5 */
                     /* Contacto */
 
-/* .main__contacto {
-
-} */
-.contacto__h1 {
-    display: flex;
-    color: white;
-    text-align: center;
-    margin-bottom: 30px;
-    justify-content: center;
-}
-.container__contacto {
-    width: 50%;
-    background-color: black;
-    margin: auto;
-    padding: 100px;
-    border: groove;
-}
-/* .contacto__h1 {
-
-} */
-.contacto__p {
-    text-align: center;
+.container__form {
+    background: linear-gradient(to bottom right, #1fafd1, #05138e,#05138ec2,#1fafd1);
+    border: 2px solid rgb(36, 7, 224);
+    flex-direction: column;
+    padding: 50px;
+    margin: 40px;
 }
 .contacto__text {
     display: flex;
@@ -861,27 +842,21 @@ iframe {
     flex-wrap: wrap;
     justify-content: center;
 }
-.contacto__form {
-    display: flex;
-    flex-direction: column;
-    align-content: space-around;
-    align-items: center;
+.form-floating {
+    width: 100%;
 }
-.input {
-    margin: 20px 0;
-    border: 4px ridge #1fafd1;
-    border-radius: 4px;
-    background: #20297c;
-    color: rgb(246 246 247);
+.form__opcion {
+    color:white;
+}
+.container__btn {
+    display: flex;
+}
+.btn__contacto {
+    display: inline-block;
+    color:white;
+    width: 200px;
 }
 
-/* textarea {
-    margin: 20px 0;
-    border: 4px ridge #1fafd1;
-    border-radius: 4px;
-    background: #20297c;
-    color: rgb(246 246 247);
-} */
 .nav {
     background-color: rgb(0, 0, 0);
     background-image: url(../img/navobelisco3.jpg);
