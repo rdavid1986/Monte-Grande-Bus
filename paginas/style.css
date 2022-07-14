@@ -435,13 +435,11 @@ footer p {
     margin-top: 30px;
     background-color: black;
 }
-
-.container__direccion {
+.footer__link {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
-    align-content: center;
     justify-content: space-around;
-    width: 100%;
 }
 
 .copyright {
@@ -451,35 +449,11 @@ footer p {
     text-align: center;
 }
 
-.copyright__dos {
-    width: 100%;
-    text-align: center;
-    margin-bottom: 60px;
- }
-.div__direccion {
-    position : relative;
-}
-.div__direccion__dos {
-    position : relative;
-    margin-bottom: 60px;
-}
-.div__direccion__ul {
-    text-align: center;
-}
-                    /* footer social */
+@media (max-width: 768px) {
+    .footer__link {
+        flex-direction: column;
 
-.footer__nav__social{
-    display: flex;
-    align-content: center;
-    justify-content: space-between;
-}
-.footer__li {
-    width: 200px;
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    flex-wrap: wrap;
+    }
 }
 
                     /* Pagina 2 */
@@ -638,6 +612,7 @@ section div ul li {
     background: linear-gradient(to bottom right, #1fafd1, #05138e,#05138ec2,#1fafd1);
     border: 2px solid rgb(36, 7, 224);
     flex-direction: column;
+    margin: 30px;
 }
 .container__reserva {
     display: flex;
@@ -665,6 +640,7 @@ section div ul li {
     }
 .img__reserva {
     width: 100%;
+    padding: 25px;
 }
 .container__reserva__p {
         margin-top: 50px;
@@ -673,10 +649,12 @@ section div ul li {
         align-items: center;
         justify-items: center;
     }
-.reserva__p {
-padding: 90px;
+ .d-flex {
+    flex-wrap: wrap;
 }
 .button__reserva {
+    display: block ;
+    margin: 0 auto;
     background: linear-gradient(to bottom right, #1fafd1, #05138e,#05138ec2,#1fafd1);
     border-image: linear-gradient(to bottom right, #1fafd1, #05138e,#05138ec2,#1fafd1);
     border-width: 4px;
@@ -684,6 +662,7 @@ padding: 90px;
     border-radius: 10px;
     padding: 5px;
     margin-top: 50px;
+    box-shadow: black 10px 13px 12px;
 }
 .button__reserva a {
    color: white;
@@ -697,10 +676,11 @@ padding: 90px;
 }
 .reserva__qr__img {
     padding: 20px;
-    border: 1px ridge white;
     margin: 30px;
 }
-
+.reserva__qr__img>img {
+   /*  width: 80%; */
+}
 .main__reserva__h1 {
     margin-top: 50px;
 }
@@ -1007,7 +987,6 @@ iframe {
     margin-bottom: 50px;
 }
 .container__servicio__capital {
-    margin: 0 auto;
     width: 100%;
     padding: 50px;
     border: 1px solid blue ;
@@ -1044,7 +1023,7 @@ iframe {
     float: right;
 }
 .servicios__2 {
-    display: none;
+    /* display: none; */
 }
 .container__servicio__capital__2 {
     display: none;
@@ -1227,7 +1206,7 @@ iframe {
     .container__servicio__capital__2 {
         margin: 0 auto;
         display: block;
-        width: 95%;
+        width: 100%;
         padding: 50px;
         border: 1px solid blue;
         background: linear-gradient(to bottom right, #1fafd1, #05138e,#05138ec2,#1fafd1);
