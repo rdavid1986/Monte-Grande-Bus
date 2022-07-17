@@ -281,10 +281,78 @@ header {
     }
     
 }
-#galeria img:hover{
+#evento__click1 {
+    display: none;
+}
+#evento__click2 {
+    display: none;
+}
+#evento__click3{
+    display: none;
+}
+#evento__click4 {
+    display: none;
+}
+#evento__click5 {
+    display: none;
+}
+#evento__click6 {
+    display: none;
+}
+#evento__click7 {
+    display: none;
+}
+#evento__click8 {
+    display: none;
+}
+#evento__click9 {
+    display: none;
+}
+#evento__click10{
+    display: none;
+}
+#evento__click1:checked ~ .col__galeria__1 {
+    transform: scale(1.5);
+}
+#evento__click2:checked~.col__galeria__2 {
+    transform: scale(1.5);
+}
+#evento__click3:checked~.col__galeria__3 {
+    transform: scale(1.5);
+}
+#evento__click4:checked~.col__galeria__4 {
+    transform: scale(1.5);
+}
+#evento__click5:checked~.col__galeria__5 {
+    transform: scale(1.5);
+}
+#evento__click6:checked~.col__galeria__6 {
+    transform: scale(1.5);
+}
+#evento__click7:checked~.col__galeria__7 {
+    transform: scale(1.5);
+}
+#evento__click8:checked~.col__galeria__8 {
+    transform: scale(1.5);
+}
+#evento__click9:checked~.col__galeria__9 {
+    transform: scale(1.5);
+}
+#evento__click10:checked~.col__galeria__10 {
+    transform: scale(1.5);
+}
+#galeria>div>div>img{
+    transform: scale(1);
+    transition:1.5 ease-in-out;
+}
+#galeria>div>div>img:hover{
     border: 5px solid#f7f7f7;
-    transform: scale 1.5;
-    transition: all 0.5 ease-in-out;
+    transform: scale(1.5);
+    transition: 1.5 ease-in-out;
+}
+.item__galeria:hover {
+    transform: scale (1.5);
+    /* transition: all 0.5 ease-in-out; */
 }
 .container__main {
     background: linear-gradient(to bottom right, black, #282828);
@@ -970,7 +1038,7 @@ iframe {
     margin-right: -100%;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
-    transition: transform .3s /* ease-in-out */;
+    transition: transform .3s ease-in-out;
 }
 
                 /* servicos */
