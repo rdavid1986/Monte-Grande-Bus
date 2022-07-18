@@ -1,0 +1,37 @@
+/* grid contactos */
+
+.main__contacto {
+    grid-area: main;
+}
+/* Contacto */
+
+.container__form {
+    background: linear-gradient(to bottom right, #1fafd1, #05138e, #05138ec2, #1fafd1);
+    border: 2px solid rgb(36, 7, 224);
+    flex-direction: column;
+    padding: 50px;
+    margin-top: 50px;
+}
+.contacto__text {
+    display: flex;
+    margin: 20px 0;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.form-floating {
+    width: 100%;
+}
+
+.form__opcion {
+    color: white;
+}
+
+.container__btn {
+    display: flex;
+}
+
+.btn__contacto {
+    display: inline-block;
+    color: white;
+    width: 200px;
+}

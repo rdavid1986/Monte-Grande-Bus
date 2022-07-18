@@ -1,0 +1,106 @@
+/* grid quienes somos */
+
+.main__quienessomos {
+    grid-area: main;
+}
+/* Quienes somos */
+.container__main__quienes__somos {
+    background: linear-gradient(to bottom right, #1fafd1, #05138e, #05138ec2, #1fafd1);
+    padding: 50px;
+    margin-top: 50px;
+    border: 1px solid blue;
+}
+.quienessomos__p
+/* p ambos section */
+    {
+    width: 100%;
+    margin: auto auto;
+    border: 1px solid blue;
+    padding: 25px;
+    box-shadow: 0px 0px 3px 0px white;
+}
+.quienessomos__iframe
+/* iframe ambos section */
+    {
+    border-top: 2px solid blue;
+    border-bottom: 2px solid blue;
+    width: 100%;
+    height: 350px;
+    margin: 60px 0;
+}
+iframe {
+    width: 100%;
+    border: 0;
+    height: 100%;
+}
+.section__dos__quienessomos {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.section__dos__quienessomos p {
+    padding: 25px;
+    color: white;
+}
+/* media queries */
+@media (min-width: 1200px) {
+
+    .main__quienessomos {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .section__uno__quienessomos {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .quienessomos__p {
+        margin-top: 100px;
+        width: 70%;
+        background: black;
+    }
+
+    .section__dos__quienessomos {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        width: 100%;
+    }
+}
+@media (min-width: 768px) {
+    .quienessomos__p {
+        margin-top: 100px;
+        width: 70%;
+        background: black;
+    }
+}
+@media (min-width: 310px) {
+    .quienessomos__p {
+        margin-top: 100px;
+        background: black;
+    }
+}
+/* main carrousel de quienes somos */
+.carousel-inner {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.carousel-item {
+    border: 2px solid rgb(1, 1, 175);
+}
+
+.carousel-item {
+    position: relative;
+    display: none;
+    float: left;
+    width: 100%;
+    margin-right: -100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transition: transform .3s ease-in-out;
+}

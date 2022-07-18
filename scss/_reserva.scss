@@ -1,0 +1,67 @@
+/* grid reserva tu lugar */
+
+.main__reserva {
+    grid-area: main;
+}
+/* main */
+h1 {
+    font-size: 3em;
+    color: white;
+    text-align: center;
+    margin-bottom: 100px;
+}
+/* main */
+.main__reserva {
+    background: linear-gradient(to bottom right, #1fafd1, #05138e, #05138ec2, #1fafd1);
+    border: 2px solid rgb(36, 7, 224);
+    flex-direction: column;
+    margin-top: 50px;
+}
+.img__reserva {
+    width: 100%;
+    padding: 25px;
+}
+/* contenedor de QR */
+.d-flex {
+    flex-wrap: wrap;
+}
+
+.button__reserva {
+    display: block;
+    margin: 0 auto;
+    background: linear-gradient(to bottom right, #1fafd1, #05138e, #05138ec2, #1fafd1);
+    border-image: linear-gradient(to bottom right, #1fafd1, #05138e, #05138ec2, #1fafd1);
+    border-width: 4px;
+    border-style: solid;
+    border-radius: 10px;
+    padding: 5px;
+    margin-top: 50px;
+    box-shadow: black 10px 13px 12px;
+}
+.button__reserva {
+
+    a {
+        color: white;
+    }
+}
+.reserva__qr__img {
+    padding: 20px;
+    margin: 30px;
+}
+.main__reserva__h1 {
+    margin-top: 50px;
+}
+.main__reserva>div {
+    text-align: center;
+}
+.telefonista__h3 {
+    color: white;
+}
+.atencion__24 {
+    margin-top: 50px;
+}
+@media (max-width: 730px) {
+    .reserva__qr__img {
+        display: none;
+    }
+}

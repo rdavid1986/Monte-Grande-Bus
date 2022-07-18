@@ -1,192 +1,75 @@
-@import "general";
-@import "index";
-@import "servicios";
-@import "reserva";
-@import "quienessomos";
-@import "contacto";
+/* grid servicios */
 
-
-
-
-
-
-
-
-
-
-/* seccion main 2 */
-
-
-
-
-
-/* Pagina 2 */
-/* Recorridos */
-
-
-
-
-.main__recorridos {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+.main__servicios {
+    grid-area: main;
 }
+/* servicos */
 
-.correo {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-.h2 {
-    background-color: black;
-    border: 1px solid rgb(36, 7, 224);
-    text-decoration: underline;
-    font-size: 2em;
+.container__servicios {
+    padding: 100px;
+    border: 2px solid blue;
+    background: linear-gradient(to bottom right, #1fafd1, #05138e, #05138ec2, #1fafd1);
+    margin-top: 50px;
     color: white;
+}
+
+.container__rows {
+    margin-bottom: 50px;
+}
+
+.container__servicio__capital {
+    width: 100%;
+    padding: 50px;
+    border: 1px solid blue;
+    background: linear-gradient(to bottom right, #1fafd1, #05138e, #05138ec2, #1fafd1);
+    margin-top: 50px;
+    color: white;
+}
+
+.servicios__h2 {
     text-align: center;
-    padding: 5px;
-    margin: 120px 0;
+    margin-bottom: 100px;
 }
 
-/* Boulevard */
-.bv {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+.container__servicio__capital>h2 {
+    text-align: center;
 }
 
-.mapa__recorrido__bv {
-    margin-bottom: 60px;
+.container__rows__servicio {
+    margin-top: 50px;
 }
 
-/* .mapa__recorrido__bv:hover {
-    transform: scale(1.5);
-    transition: 2.5s;
-} */
-
-.img__mapa {
-    border: 1px solid black;
-    padding: 5px;
-    box-shadow: 0px 0px 3px 0px white;
+.servicios__h {
+    margin-top: 50px;
 }
 
-.lista__recorrido__bv {
-    background-image: url('../img/av9dejulio.jpg');
-    background-size: cover;
-    margin: auto 0px;
-    padding: 15px;
-    border-style: double;
-    border-width: 4px;
-    border: 1px ridge white;
-    border-width: 4px;
+.servicios__ul {
+    margin-top: 50px;
+
 }
 
-
-
-
-
-.lista__recorrido__correo {
-    background-image: url('../img/av9dejulio.jpg');
-    background-size: cover;
-    margin: auto 0px;
-    padding: 15px;
-    border-style: double;
-    border-width: 4px;
-    border: 1px ridge white;
-    border-width: 4px;
+.servicios__ul>li {
+    margin: 10px;
+    list-style: initial;
 }
 
-@media (max-width: 550px) {
-    .ul__recorrido
-
-    /* Ambos section div ul */
-        {
-        border: 1px ridge white;
-        max-width: 100%;
-        border-style: double;
-        border-width: 4px;
-        border: 1px ridge white;
-        border-width: 4px;
-    }
+.servicios__ul>img {
+    width: 50%;
+    background-color: #1fafd1;
+    padding: 3px;
+    border: 3px solid black;
+    float: right;
 }
-
-
-
-/* Correo */
-
-/* Pagina 3 */
-/* Reserva tu lugar */
-
-
-
-
-
-
-
-
-
-/* @media (max-width: 768px) {
-    .reserva__qr {
-    
-    }
-}
- */
-/* Pagina 4 */
-
-
-
-
-/* quienes somos media queris */
-
-
-
-
-
-
-/* Pagina 5 */
-
-
-
-
-
-
-
-
-/* .nav>background {
-    width:300px;
-    height: 600px;
-} */
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* grid index */
-
-
-
-
-
-
-
-/* media queries reserva tu lugar */
-
-
-
-
-
+ .container__servicio__capital__2{
+    display: none;
+ }
 /* media queris servicios */
-
+@media (min-with: 800px){
+    .container__servicio__capital__2 {
+            display: none;
+        }
+        
+}
 @media (max-width:1200px) {
     .container__servicio__capital {
         display: none;
@@ -221,6 +104,9 @@
     }
     .container__rows>div>h4 {
         margin-bottom: 40px;
+    }
+    .img__none {
+        display: none;
     }
     .container__servicio__capital__2 {
         margin: 0 auto;
@@ -312,23 +198,3 @@
         display: flex;
     }
 }
-
-main, .container__form {
-    animation: transitionIn 1s;
-}
-
-@keyframes transitionIn {
-    from {
-        opacity: 0;
-        transform: rotateX(-10deg);
-    }
-    to {
-        opacity: 1;
-        transform: rotateX(0);
-    }
-}
-
-
-
-
-
