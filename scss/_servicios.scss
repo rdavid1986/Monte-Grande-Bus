@@ -55,28 +55,10 @@
     height: 550px;
     width: 400px;
 }
-/* .servicios__ul>img {
-    width: 50%;
-    background-color: #1fafd1;
-    padding: 3px;
-    border: 3px solid black;
-    float: right;
-} */
-/*  .container__servicio__capital__2{
-    display: none;
- } */
 /* media queris servicios */
-@media (min-with: 800px){
-    /* .container__servicio__capital__2 {
-            display: none;
-        }
-         */
-}
+/* @media (min-with: 800px){
+} */
 @media (max-width:1200px) {
-   /*  .container__servicio__capital {
-        display: none;
-        flex-wrap: wrap;
-    } */
     .container__rows__servicio {
         display: flex;
         flex-wrap: wrap;
@@ -101,31 +83,12 @@
     .servicio__capital__bv>h4 {
         text-align: center;
     }
-    /* .container__servicios {
-        display: none;
-    } */
-    /* .servicios__2 {
-        display: inline-grid;
-    } */
     .container__rows>div {
         margin-top: 30px;
     }
     .container__rows>div>h4 {
         margin-bottom: 40px;
     }
-    /* .img__none {
-        display: none;
-    } */
-/*     .container__servicio__capital__2 {
-        margin: 0 auto;
-        display: block;
-        width: 100%;
-        padding: 50px;
-        border: 1px solid blue;
-        background: linear-gradient(to bottom right, #1fafd1, #05138e, #05138ec2, #1fafd1);
-        margin-top: 50px;
-        color: white;
-    } */
 }
 
 @media (max-width: 768px) {
@@ -144,40 +107,6 @@
         width: 320px;
         padding: 40px;
     }
-   /*  .container__servicios {
-        display: none;
-        flex-direction: row;
-    }
- */
-    /* .container__rows__servicio {
-        display: none;
-    }
- */
-  /*   .servicios__2 {
-        display: block;
-    } */
-
-   /*  .container__servicio__capital {
-        display: none;
-    } */
-
-   /*  .container__servicio__capital__2 {
-        display: flex;
-        flex-wrap: wrap;
-    }
- */
-    /* .container__rows__Servicio__capital__2 {
-        display: block
-    } */
-
-  /*   .img__view {
-        display: none;
-    }
- */
-  /*   .img__none {
-        display: flex;
-        width: fit-content;
-    } */
 }
 
 @media (max-width: 600px) {

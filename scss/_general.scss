@@ -59,14 +59,15 @@ p {
     flex-direction: row;
     margin: 30px auto;
     list-style: none;
+    &__li{
+        margin-right: 60px;
+        margin-bottom: 30px;
+    }
 }
-.li__social {
-    margin-right: 60px;
-    margin-bottom: 30px;
-}
+
 .h2 {
     background-color: black;
-    border: 1px solid rgb(36, 7, 224);
+    border: $border-main;
     text-decoration: underline;
     font-size: 2em;
     color: white;
@@ -86,7 +87,7 @@ p {
         justify-content: space-evenly;
         background: linear-gradient(to bottom right, white, white, #1fafd1, #05138e, #05138e, white);
         width: 100%;
-        border: 1px solid rgb(36, 7, 224);
+        border: $border-main;
         justify-items: end;
         margin-bottom:3px;
     }
@@ -137,10 +138,10 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    background: linear-gradient(to bottom right, white, white, #1fafd1, #05138e, #05138e, white);
+    background: $header-background;
     width: 100%;
     height: 120px;
-    border: 1px solid rgb(36, 7, 224);
+    border: $border-main;
     margin-bottom:3px;
 }
 .nav {
@@ -162,18 +163,15 @@ header {
     width: 200px;
     text-align: center;
 }
-.nav-tabs {
+.nav-tabs { 
     padding-top: 550px;
     width: 98%;
     display: flex;
     justify-content: space-around;
-}
-.nav-link {
-    padding: 5px;
-    margin-bottom: 40px;
-}
-.nav-item>a.active {
-    color: aqua;
+    &-link {
+        padding: 5px;
+        margin-bottom: 40px;
+    }
 }
 .tab-content>.active {
     display: none;
@@ -199,27 +197,8 @@ header {
         background: linear-gradient(to bottom right, white, white, #1fafd1, #05138e, #05138e, white);
         width: 100%;
         height: 120px;
-        border: 1px solid rgb(36, 7, 224);
+        border: $border-main;
         margin-bottom:3px;
-    }
-    .div__nav {
-        justify-content: center;
-        width: 50%;
-    }
-    .nav__nav {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-content: flex-start;
-        background-color: black;
-        border: 1px solid rgb(36, 7, 224);
-        width: 95%;
-        height: fit-content;
-        padding: 5px;
-    }
-    .nav__nav__nav {
-        width: 40%;
-        text-align: center;
     }
 }
 @media (max-width: 861px) {
@@ -253,32 +232,6 @@ header {
         background-position: top;
         align-content: flex-start;
     }
-    .div__nav {
-        display: flex;
-        flex-wrap: wrap;
-        background: linear-gradient(to bottom right, black, #282828);
-        border: 1px solid rgb(36, 7, 224);
-        width: 70%;
-        margin-top: 60px;
-        margin-bottom: 30px;
-        padding: 60px;
-    }
-    .nav__nav__nav {
-        width: 70%;
-    }
-    .section__recorrido {
-        display: flex;
-        width: 300px;
-        flex-direction: column;
-        flex-wrap: wrap;
-        margin: 0 auto;
-    }
-    .img__mapa {
-        border: 1px solid black;
-        padding: 5px;
-        box-shadow: 0px 0px 3px 0px white;
-        width: 300px;
-    }
 }
 /* footer */
 
@@ -286,7 +239,7 @@ header {
     background: #152F4F;
     color: white;
     padding-bottom: 50px;
-    border: 2px solid rgb(36, 7, 224);
+    border: $border-main;
 }
 footer p {
     margin-top: 30px;
@@ -297,15 +250,13 @@ footer p {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
+    margin: 30px 0;
 }
 .copyright {
     width: 100%;
     height: 50px;
     margin-bottom: 60px;
     text-align: center;
-}
-.footer__link {
-    margin: 30px 0;
 }
 .fa__social {
     display: flex;
@@ -344,7 +295,7 @@ footer p {
         flex-wrap: wrap;
         align-content: center;
         justify-content: center;
-        border: 2px solid rgb(36, 7, 224);
+        border: $border-main;
         height: auto;
         margin: 50px auto;
         padding: 20px;
@@ -371,7 +322,7 @@ footer p {
         margin: 0 auto;
         margin-right: 50px;
     }
-    .li__social {
+    .nav__social__li {
         margin: 5px;
     }
     .footer {
@@ -379,7 +330,7 @@ footer p {
         flex-wrap: wrap;
         align-content: center;
         justify-content: center;
-        border: 2px solid rgb(36, 7, 224);
+        border: $border-main;
         height: auto;
         width: 320px;
     }

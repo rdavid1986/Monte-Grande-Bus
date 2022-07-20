@@ -77,7 +77,7 @@
 #evento__click10 {
     display: none;
 }
-#evento__click1:checked~.col__galeria__1 {
+#evento__click1:checked~.col__galeria__1, {
     transform: scale(1.5);
 }
 #evento__click2:checked~.col__galeria__2 {
