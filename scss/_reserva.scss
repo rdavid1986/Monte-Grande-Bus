@@ -4,22 +4,36 @@
     grid-area: main;
 }
 /* main */
-h1 {
-    font-size: 3em;
-    color: white;
-    text-align: center;
-    margin-bottom: 100px;
-}
+
 /* main */
 .main__reserva {
     background: linear-gradient(to bottom right, #1fafd1, #05138e, #05138ec2, #1fafd1);
     border: 2px solid rgb(36, 7, 224);
     flex-direction: column;
     margin-top: 50px;
-}
-.img__reserva {
-    width: 100%;
-    padding: 25px;
+    &__h1{
+        /* font-size: 3em; */
+        color: white;
+        text-align: center;
+        margin-top: 50px;
+        margin-bottom: 100px;
+    }
+    &__row__img {
+        width: 110%;
+    }
+    &__qr__img {
+        padding: 20px;
+        margin: 30px;
+    }
+    &__p {
+        padding:50px;
+    }
+    &__h3 {
+        color: white;
+        text-align: center;
+        margin-top: 50px;
+        margin-bottom: 100px;
+    }
 }
 /* contenedor de QR */
 .d-flex {
@@ -37,31 +51,37 @@ h1 {
     padding: 5px;
     margin-top: 50px;
     box-shadow: black 10px 13px 12px;
-}
-.button__reserva {
-
     a {
         color: white;
     }
 }
-.reserva__qr__img {
-    padding: 20px;
-    margin: 30px;
-}
-.main__reserva__h1 {
-    margin-top: 50px;
-}
-.main__reserva>div {
-    text-align: center;
-}
-.telefonista__h3 {
-    color: white;
-}
-.atencion__24 {
-    margin-top: 50px;
-}
-@media (max-width: 730px) {
-    .reserva__qr__img {
+@media (max-width: 768px) {
+    .main__reserva__row {
+        width:400px;
+        padding:0;
+        margin: 0 auto;
+        &__img {
+                min-width: 310px;
+            }
+    }
+    &__qr__img {
         display: none;
+    }
+}
+@media (max-width: 600px) {
+    .main__reserva__row {
+        width: 320px;
+        display: flex;
+        justify-content: space-around;
+        padding:0;
+        &__img {
+            min-width: 320px;
+        }
+        &__qr__img {
+            display: none;
+        }
+    }    
+    .main__reserva__h1 {
+        font-size: 2em;
     }
 }
