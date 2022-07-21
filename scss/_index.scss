@@ -3,23 +3,17 @@
 .container__header {
     grid-area: header;
 }
-
 .nav-tabs {
     grid-area: nav;
 }
-
 .main__index {
     grid-area: main;
 }
-
 .footer {
     grid-area: footer;
 }
 /* galeria bootstrap */
-.container- {
-    width: 100%;
-    margin: 0 auto;
-}
+
 #galeria {
     border: 2px solid blue;
     background: linear-gradient(to bottom right, #1fafd1, #05138e, #05138ec2, #1fafd1);
@@ -77,7 +71,8 @@
 #evento__click10 {
     display: none;
 }
-#evento__click1:checked~.col__galeria__1, {
+
+#evento__click1:checked~.col__galeria__1 {
     transform: scale(1.5);
 }
 #evento__click2:checked~.col__galeria__2 {

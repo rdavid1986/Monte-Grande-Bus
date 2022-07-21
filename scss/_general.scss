@@ -32,7 +32,7 @@ p {
 }
 
 /* Images */
-.div__img__logo__mgb {
+.container__header__logo{
     margin: 0 auto;
     margin-top: 24px;
 }
@@ -51,8 +51,8 @@ p {
     width: 200px;
 }
 
-/* social header */
-.nav__social {
+/* container header */
+.container__header__nav__social {
     display: flex;
     justify-content: space-evenly;
     align-content: center;
@@ -76,7 +76,7 @@ p {
     margin: 120px 0;
 }
 @media (max-width: 1241px) {
-    .nav__social {
+    .container__header__nav__social {
         margin: 30px auto;
     }
 }
@@ -90,12 +90,6 @@ p {
         border: $border-main;
         justify-items: end;
         margin-bottom:3px;
-    }
-    .nav__social {
-        display: flex;
-        justify-content: space-evenly;
-        align-content: center;
-        flex-direction: row;
     }
 }
 @media (max-width: 550px) {
@@ -111,7 +105,7 @@ p {
             "footer";
     }
 
-    .nav__social {
+    .container__header__nav__social {
         display: flex;
         align-items: center;
         flex-wrap: wrap;
@@ -120,7 +114,7 @@ p {
     }
 }
 @media (max-width: 350px) {
-    .nav__social {
+    .container__header__nav__social {
         display: flex;
         align-items: center;
         flex-wrap: wrap;
@@ -168,10 +162,6 @@ header {
     width: 98%;
     display: flex;
     justify-content: space-around;
-    &-link {
-        padding: 5px;
-        margin-bottom: 40px;
-    }
 }
 .tab-content>.active {
     display: none;
@@ -205,6 +195,9 @@ header {
     .container__header {
         height: auto;
     }
+    .nav-tabs {
+        flex-direction: column;
+    }
 }
 @media (max-width: 768px) {
     body {
@@ -227,7 +220,8 @@ header {
         flex-direction: column;
     }
     .nav-tabs {
-        padding-top: 55%;
+        flex-direction: column;
+        padding-top: 45%;
         display: flex;
         background-position: top;
         align-content: flex-start;
@@ -314,16 +308,18 @@ footer p {
             "main"
             "footer";
     }
-    .div__img__logo__mgb {
-        margin-top: 30px;
-        margin-bottom: 5px;
-    }
-    .nav__social {
-        margin: 0 auto;
-        margin-right: 50px;
-    }
-    .nav__social__li {
-        margin: 5px;
+    .container__header {
+        &__logo {
+            margin-top: 30px;
+            margin-bottom: 5px;
+        }
+        &__nav__social {
+            margin: 0 auto;
+            margin-right: 50px;
+        }
+        &__nav__social__li {
+            margin: 5px;
+        }
     }
     .footer {
         display: flex;
@@ -354,7 +350,7 @@ main,
         transform: rotateX(0);
     }
 }
-.logomgb, .nav__social {
+.logomgb, .container__header__nav__social {
     animation:transitionInLogo 1.3s;
 }
 @keyframes transitionInLogo {
@@ -362,9 +358,9 @@ main,
         opacity: .5;
         transform: scale(.7);
     }
-
     to {
         opacity: 1;
+        transform: rotateY(0deg);
         transform: scale(1);
     }
 }

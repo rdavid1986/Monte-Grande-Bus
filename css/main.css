@@ -26,7 +26,7 @@ p {
   color: white; }
 
 /* Images */
-.div__img__logo__mgb {
+.container__header__logo {
   margin: 0 auto;
   margin-top: 24px; }
 
@@ -44,15 +44,15 @@ p {
 .logo-playstore {
   width: 200px; }
 
-/* social header */
-.nav__social {
+/* container header */
+.container__header__nav__social {
   display: flex;
   justify-content: space-evenly;
   align-content: center;
   flex-direction: row;
   margin: 30px auto;
   list-style: none; }
-  .nav__social__li {
+  .container__header__nav__social__li {
     margin-right: 60px;
     margin-bottom: 30px; }
 
@@ -67,7 +67,7 @@ p {
   margin: 120px 0; }
 
 @media (max-width: 1241px) {
-  .nav__social {
+  .container__header__nav__social {
     margin: 30px auto; } }
 
 @media (max-width: 768px) {
@@ -79,12 +79,7 @@ p {
     width: 100%;
     border: 1px solid #2407e0;
     justify-items: end;
-    margin-bottom: 3px; }
-  .nav__social {
-    display: flex;
-    justify-content: space-evenly;
-    align-content: center;
-    flex-direction: row; } }
+    margin-bottom: 3px; } }
 
 @media (max-width: 550px) {
   body {
@@ -93,7 +88,7 @@ p {
     grid-template-columns: 100%;
     grid-template-rows: auto;
     grid-template-areas: "nav" "main" "header" "footer"; }
-  .nav__social {
+  .container__header__nav__social {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -101,7 +96,7 @@ p {
     margin-left: 20px; } }
 
 @media (max-width: 350px) {
-  .nav__social {
+  .container__header__nav__social {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -147,9 +142,6 @@ header {
   width: 98%;
   display: flex;
   justify-content: space-around; }
-  .nav-tabs-link {
-    padding: 5px;
-    margin-bottom: 40px; }
 
 .tab-content > .active {
   display: none; }
@@ -174,7 +166,9 @@ header {
 
 @media (max-width: 861px) {
   .container__header {
-    height: auto; } }
+    height: auto; }
+  .nav-tabs {
+    flex-direction: column; } }
 
 @media (max-width: 768px) {
   body {
@@ -190,7 +184,8 @@ header {
     justify-content: space-around;
     flex-direction: column; }
   .nav-tabs {
-    padding-top: 55%;
+    flex-direction: column;
+    padding-top: 45%;
     display: flex;
     background-position: top;
     align-content: flex-start; } }
@@ -267,13 +262,13 @@ footer p {
     grid-template-columns: 100%;
     grid-template-rows: auto;
     grid-template-areas: "header" "nav" "main" "footer"; }
-  .div__img__logo__mgb {
+  .container__header__logo {
     margin-top: 30px;
     margin-bottom: 5px; }
-  .nav__social {
+  .container__header__nav__social {
     margin: 0 auto;
     margin-right: 50px; }
-  .nav__social__li {
+  .container__header__nav__social__li {
     margin: 5px; }
   .footer {
     display: flex;
@@ -297,7 +292,7 @@ main,
     opacity: 1;
     transform: rotateX(0); } }
 
-.logomgb, .nav__social {
+.logomgb, .container__header__nav__social {
   animation: transitionInLogo 1.3s; }
 
 @keyframes transitionInLogo {
@@ -306,6 +301,7 @@ main,
     transform: scale(0.7); }
   to {
     opacity: 1;
+    transform: rotateY(0deg);
     transform: scale(1); } }
 
 /* index grid */
@@ -322,10 +318,6 @@ main,
   grid-area: footer; }
 
 /* galeria bootstrap */
-.container- {
-  width: 100%;
-  margin: 0 auto; }
-
 #galeria {
   border: 2px solid blue;
   background: linear-gradient(to bottom right, #1fafd1, #05138e, #05138ec2, #1fafd1);
@@ -423,10 +415,13 @@ main,
   background: linear-gradient(to bottom right, #1fafd1, #05138e, #05138ec2, #1fafd1);
   margin-top: 50px;
   color: white; }
+  .container__servicios__rows {
+    margin-bottom: 50px; }
+  .container__servicios__h2 {
+    text-align: center;
+    margin-bottom: 100px; }
 
-.container__rows {
-  margin-bottom: 50px; }
-
+/* container servicio capital */
 .container__servicio__capital {
   width: 100%;
   padding: 50px;
@@ -434,57 +429,30 @@ main,
   background: linear-gradient(to bottom right, #1fafd1, #05138e, #05138ec2, #1fafd1);
   margin-top: 50px;
   color: white; }
-
-.servicios__h2 {
-  text-align: center;
-  margin-bottom: 100px; }
-
-/* .container__servicio__capital>h2 {
-    text-align: center;
-} */
-.container__rows__servicio {
-  margin-top: 50px; }
-
-.servicios__h {
-  margin-top: 50px; }
-
-.servicios__ul {
-  margin-top: 50px; }
-
-.servicios__mapa__1 {
-  margin-top: 88px; }
+  .container__servicio__capital__h2 {
+    text-align: center; }
+  .container__servicio__capital__row {
+    margin-top: 50px; }
+  .container__servicio__capital__ul {
+    margin-top: 50px; }
 
 .servicios__mapa {
   height: 550px;
   width: 400px; }
+  .servicios__mapa__1 {
+    margin-top: 88px; }
 
 /* media queris servicios */
 /* @media (min-with: 800px){
 } */
 @media (max-width: 1200px) {
-  .container__rows__servicio {
+  .container__servicio__capital__row {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     align-content: space-around; }
-  .servicios__ul > img {
-    width: 250px;
-    background-color: #1fafd1;
-    padding: 3px;
-    border: 3px solid black;
-    float: right; }
-  .servicio__capital__display {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    color: white;
-    margin: 0 auto; }
-  .servicio__capital__bv > h4 {
-    text-align: center; }
-  .container__rows > div {
-    margin-top: 30px; }
-  .container__rows > div > h4 {
+  .container__servicio__capital__h {
+    margin-top: 40px;
     margin-bottom: 40px; } }
 
 @media (max-width: 768px) {
@@ -497,40 +465,14 @@ main,
   .container__servicio__capital {
     padding: 0; }
   .servicios__mapa {
-    width: 320px;
+    max-width: 360px;
     padding: 40px; } }
 
 @media (max-width: 600px) {
-  .servicios__display__img > img {
-    width: 300px; }
-  .servicios__display__img {
-    margin: 0 auto; }
-  /* .servicios__2 {
-        display: block;
-    } */
+  .servicios__2 {
+    display: block; }
   .container__servicios {
-    padding: 10; }
-  /* .container__servicio__capital__2 {
-        margin: 0 auto;
-        width: 95%;
-        padding: 50px;
-        border: 1px solid blue;
-        background: linear-gradient(to bottom right, #1fafd1, #05138e, #05138ec2, #1fafd1);
-        margin-top: 50px;
-        color: white;
-    } */
-  /*  .img__view {
-        display: none;
-    }
-
-    .img__none {
-        width: 250px;
-        display: flex;
-    } */ }
-
-@media (min-width: 400px) {
-  .container__rows__servicio {
-    padding: 0; } }
+    padding: 10px; } }
 
 /* grid reserva tu lugar */
 .main__reserva {
