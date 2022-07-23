@@ -3,6 +3,12 @@
 .main__quienessomos {
     grid-area: main;
 }
+.quienessomos__h1 {
+    color: white;
+        text-align: center;
+        margin-top: 50px;
+        margin-bottom: 100px;
+}
 /* Quienes somos */
 .container__main__quienes__somos {
     background: linear-gradient(to bottom right, #1fafd1, #05138e, #05138ec2, #1fafd1);
