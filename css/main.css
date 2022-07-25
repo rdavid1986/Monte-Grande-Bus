@@ -1,4 +1,5 @@
 /* variables */
+/* maps */
 /* extends */
 .button__reserva, .btn__contacto {
   margin: 0 auto;
@@ -17,11 +18,7 @@
   border: 2px solid blue;
   color: white;
   margin-top: 50px;
-  padding: 50px;
-  /* background: linear-gradient(to bottom right, #1fafd1, #05138e, #05138ec2, #1fafd1); */
-  /* border: 2px solid blue; */
-  /* margin-top: 50px; */
-  /* color: white; */ }
+  padding: 50px; }
 
 /* general */
 * {
@@ -497,7 +494,7 @@ main,
 .main__reserva__row__img {
   width: 110%; }
 
-.main__reserva__qr__img {
+.main__reserva__row__qr__img {
   padding: 20px;
   margin: 30px; }
 
