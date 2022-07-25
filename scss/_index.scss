@@ -15,11 +15,7 @@
 /* galeria bootstrap */
 
 #galeria {
-    border: 2px solid blue;
-    background: linear-gradient(to bottom right, #1fafd1, #05138e, #05138ec2, #1fafd1);
-    margin-top: 50px;
-    padding: 50px;
-    color: white;
+    @extend %main;
 }
 #galeria img {
     width: 100%;
@@ -71,7 +67,6 @@
 #evento__click10 {
     display: none;
 }
-
 #evento__click1:checked~.col__galeria__1 {
     transform: scale(1.5);
 }

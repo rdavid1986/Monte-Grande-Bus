@@ -11,17 +11,14 @@
 }
 /* Quienes somos */
 .container__main__quienes__somos {
-    background: linear-gradient(to bottom right, #1fafd1, #05138e, #05138ec2, #1fafd1);
-    padding: 50px;
-    margin-top: 50px;
-    border: 1px solid blue;
+    @extend %main ;
 }
 .quienessomos__p
 /* p ambos section */
     {
     width: 100%;
     margin: auto auto;
-    border: 1px solid blue;
+    border: $border-main;
     padding: 25px;
     box-shadow: 0px 0px 3px 0px white;
 }
@@ -97,7 +94,7 @@ iframe {
 }
 
 .carousel-item {
-    border: 2px solid rgb(1, 1, 175);
+    border: $border-main;
 }
 
 .carousel-item {

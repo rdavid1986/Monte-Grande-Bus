@@ -4,13 +4,11 @@
     grid-area: main;
 }
 /* Contacto */
-
+.container {
+    color: gray;
+}
 .container__form {
-    background: linear-gradient(to bottom right, #1fafd1, #05138e, #05138ec2, #1fafd1);
-    border: 2px solid rgb(36, 7, 224);
-    flex-direction: column;
-    padding: 50px;
-    margin-top: 50px;
+    @extend %main;
     h1 {
         color: white;
         text-align: center;
@@ -35,8 +33,8 @@
 .container__btn {
     display: flex;
 }
-
 .btn__contacto {
+    @extend %boton;
     display: inline-block;
     color: white;
     width: 200px;

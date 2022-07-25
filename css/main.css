@@ -1,3 +1,28 @@
+/* variables */
+/* extends */
+.button__reserva, .btn__contacto {
+  margin: 0 auto;
+  background: linear-gradient(to bottom right, #1fafd1, #05138e, #05138ec2, #1fafd1);
+  border-image: linear-gradient(to bottom right, #1fafd1, #05138e, #05138ec2, #1fafd1);
+  border-width: 4px;
+  border-radius: 10px;
+  padding: 5px;
+  margin-top: 50px;
+  box-shadow: black 10px 13px 12px; }
+  .button__reserva a, .btn__contacto a {
+    color: white; }
+
+#galeria, .container__servicios, .container__servicio__capital, .main__reserva, .container__main__quienes__somos, .container__form {
+  background: linear-gradient(to bottom right, #1fafd1, #05138e, #05138ec2, #1fafd1);
+  border: 2px solid blue;
+  color: white;
+  margin-top: 50px;
+  padding: 50px;
+  /* background: linear-gradient(to bottom right, #1fafd1, #05138e, #05138ec2, #1fafd1); */
+  /* border: 2px solid blue; */
+  /* margin-top: 50px; */
+  /* color: white; */ }
+
 /* general */
 * {
   margin: 0;
@@ -193,9 +218,9 @@ header {
 /* footer */
 .footer {
   background: #152F4F;
-  color: white;
+  border: 1px solid #2407e0;
   padding-bottom: 50px;
-  border: 1px solid #2407e0; }
+  color: white; }
 
 footer p {
   margin-top: 30px;
@@ -318,13 +343,6 @@ main,
   grid-area: footer; }
 
 /* galeria bootstrap */
-#galeria {
-  border: 2px solid blue;
-  background: linear-gradient(to bottom right, #1fafd1, #05138e, #05138ec2, #1fafd1);
-  margin-top: 50px;
-  padding: 50px;
-  color: white; }
-
 #galeria img {
   width: 100%;
   margin: 10px 0;
@@ -409,32 +427,22 @@ main,
   grid-area: main; }
 
 /* servicos */
-.container__servicios {
-  padding: 100px;
-  border: 2px solid blue;
-  background: linear-gradient(to bottom right, #1fafd1, #05138e, #05138ec2, #1fafd1);
-  margin-top: 50px;
-  color: white; }
-  .container__servicios__rows {
-    margin-bottom: 50px; }
-  .container__servicios__h2 {
-    text-align: center;
-    margin-bottom: 100px; }
+.container__servicios__rows {
+  margin-bottom: 50px; }
+
+.container__servicios__h2 {
+  text-align: center;
+  margin-bottom: 100px; }
 
 /* container servicio capital */
-.container__servicio__capital {
-  width: 100%;
-  padding: 50px;
-  border: 1px solid blue;
-  background: linear-gradient(to bottom right, #1fafd1, #05138e, #05138ec2, #1fafd1);
-  margin-top: 50px;
-  color: white; }
-  .container__servicio__capital__h2 {
-    text-align: center; }
-  .container__servicio__capital__row {
-    margin-top: 50px; }
-  .container__servicio__capital__ul {
-    margin-top: 50px; }
+.container__servicio__capital__h2 {
+  text-align: center; }
+
+.container__servicio__capital__row {
+  margin-top: 50px; }
+
+.container__servicio__capital__ul {
+  margin-top: 50px; }
 
 .servicios__mapa {
   height: 550px;
@@ -480,47 +488,34 @@ main,
 
 /* main */
 /* main */
-.main__reserva {
-  background: linear-gradient(to bottom right, #1fafd1, #05138e, #05138ec2, #1fafd1);
-  border: 2px solid #2407e0;
-  flex-direction: column;
-  margin-top: 50px; }
-  .main__reserva__h1 {
-    /* font-size: 3em; */
-    color: white;
-    text-align: center;
-    margin-top: 50px;
-    margin-bottom: 100px; }
-  .main__reserva__row__img {
-    width: 110%; }
-  .main__reserva__qr__img {
-    padding: 20px;
-    margin: 30px; }
-  .main__reserva__p {
-    padding: 50px; }
-  .main__reserva__h3 {
-    color: white;
-    text-align: center;
-    margin-top: 50px;
-    margin-bottom: 100px; }
+.main__reserva__h1 {
+  color: white;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 100px; }
+
+.main__reserva__row__img {
+  width: 110%; }
+
+.main__reserva__qr__img {
+  padding: 20px;
+  margin: 30px; }
+
+.main__reserva__p {
+  padding: 50px; }
+
+.main__reserva__h3 {
+  color: white;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 100px; }
 
 /* contenedor de QR */
 .d-flex {
   flex-wrap: wrap; }
 
 .button__reserva {
-  display: block;
-  margin: 0 auto;
-  background: linear-gradient(to bottom right, #1fafd1, #05138e, #05138ec2, #1fafd1);
-  border-image: linear-gradient(to bottom right, #1fafd1, #05138e, #05138ec2, #1fafd1);
-  border-width: 4px;
-  border-style: solid;
-  border-radius: 10px;
-  padding: 5px;
-  margin-top: 50px;
-  box-shadow: black 10px 13px 12px; }
-  .button__reserva a {
-    color: white; }
+  display: block; }
 
 @media (max-width: 768px) {
   .main__reserva__row {
@@ -556,16 +551,10 @@ main,
   margin-bottom: 100px; }
 
 /* Quienes somos */
-.container__main__quienes__somos {
-  background: linear-gradient(to bottom right, #1fafd1, #05138e, #05138ec2, #1fafd1);
-  padding: 50px;
-  margin-top: 50px;
-  border: 1px solid blue; }
-
 .quienessomos__p {
   width: 100%;
   margin: auto auto;
-  border: 1px solid blue;
+  border: 1px solid #2407e0;
   padding: 25px;
   box-shadow: 0px 0px 3px 0px white; }
 
@@ -627,7 +616,7 @@ iframe {
   margin: 0 auto; }
 
 .carousel-item {
-  border: 2px solid #0101af; }
+  border: 1px solid #2407e0; }
 
 .carousel-item {
   position: relative;
@@ -644,17 +633,14 @@ iframe {
   grid-area: main; }
 
 /* Contacto */
-.container__form {
-  background: linear-gradient(to bottom right, #1fafd1, #05138e, #05138ec2, #1fafd1);
-  border: 2px solid #2407e0;
-  flex-direction: column;
-  padding: 50px;
-  margin-top: 50px; }
-  .container__form h1 {
-    color: white;
-    text-align: center;
-    margin-top: 50px;
-    margin-bottom: 100px; }
+.container {
+  color: gray; }
+
+.container__form h1 {
+  color: white;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 100px; }
 
 .contacto__text {
   display: flex;

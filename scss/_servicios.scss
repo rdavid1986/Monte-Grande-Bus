@@ -6,11 +6,7 @@
 /* servicos */
 
 .container__servicios {
-    padding: 100px;
-    border: 2px solid blue;
-    background: linear-gradient(to bottom right, #1fafd1, #05138e, #05138ec2, #1fafd1);
-    margin-top: 50px;
-    color: white;
+    @extend %main;
     &__rows {
         margin-bottom: 50px;
     }
@@ -22,12 +18,7 @@
 /* container servicio capital */
 
 .container__servicio__capital {
-    width: 100%;
-    padding: 50px;
-    border: 1px solid blue;
-    background: linear-gradient(to bottom right, #1fafd1, #05138e, #05138ec2, #1fafd1);
-    margin-top: 50px;
-    color: white;
+    @extend %main ;
     &__h2{
         text-align: center;
     }
