@@ -17,10 +17,8 @@
     }
 }
 .contacto__text {
-    display: flex;
-    margin: 20px 0;
-    flex-wrap: wrap;
-    justify-content: center;
+    @include flex( flex, row, wrap, center ,center );
+    margin: 20px 0; 
 }
 .form-floating {
     width: 100%;

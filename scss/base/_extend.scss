@@ -13,7 +13,6 @@
         color: white;
     }
 }
-
 %main {
     background: $main-background;
     border: 2px solid blue;
@@ -21,3 +20,12 @@
     margin-top: 50px;
     padding: 50px;
 }
+/* map */
+$letras:(
+    "p":white,
+    "b": black,
+    "t1": 1em,
+    "t2": 1.5em,
+    "t3": 2em,
+    "t4": 2.5em,
+)

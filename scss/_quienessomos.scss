@@ -21,6 +21,8 @@
     border: $border-main;
     padding: 25px;
     box-shadow: 0px 0px 3px 0px white;
+    margin-top: 100px;
+    background: black;
 }
 .quienessomos__iframe
 /* iframe ambos section */
@@ -36,37 +38,32 @@ iframe {
     border: 0;
     height: 100%;
 }
-.section__dos__quienessomos {
+/* .section__dos__quienessomos {
     display: flex;
     flex-wrap: wrap;
-}
+} */
 
 .section__dos__quienessomos p {
     padding: 25px;
     color: white;
 }
 /* media queries */
-@media (min-width: 1200px) {
-
+@media (max-width: 1200px) {
     .main__quienessomos {
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
         width: 100%;
     }
-
     .section__uno__quienessomos {
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
     }
-
     .quienessomos__p {
         margin-top: 100px;
-        width: 70%;
         background: black;
     }
-
     .section__dos__quienessomos {
         display: flex;
         flex-wrap: wrap;
@@ -74,17 +71,24 @@ iframe {
         width: 100%;
     }
 }
-@media (min-width: 768px) {
+@media (max-width: 768px) {
+    .container__main__quienes__somos {
+        padding:0;
+    }
     .quienessomos__p {
         margin-top: 100px;
-        width: 70%;
         background: black;
+        font-size: map-get($letras,t3);
     }
 }
-@media (min-width: 310px) {
+@media (max-width: 310px) {
+    .container__main__quienes__somos {
+        padding: 0;
+    }
     .quienessomos__p {
         margin-top: 100px;
         background: black;
+       /*  font-size:map-get($letras,t3); */
     }
 }
 /* main carrousel de quienes somos */

@@ -1,5 +1,5 @@
 /* variables */
-/* maps */
+/* mixin */
 /* extends */
 .button__reserva, .btn__contacto {
   margin: 0 auto;
@@ -20,6 +20,7 @@
   margin-top: 50px;
   padding: 50px; }
 
+/* map */
 /* general */
 * {
   margin: 0;
@@ -219,6 +220,21 @@ header {
   padding-bottom: 50px;
   color: white; }
 
+.about-company h2 {
+  color: white; }
+
+.direccion__caba {
+  display: flex;
+  color: white; }
+
+.location h4 {
+  color: white; }
+
+/* footer {
+    h4 {
+        font-size: map-get($letras,t3);
+    }
+} */
 footer p {
   margin-top: 30px;
   background-color: black; }
@@ -254,9 +270,6 @@ footer p {
   border-radius: 25%;
   background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%); }
 
-.direccion__caba {
-  display: flex; }
-
 .boton__consultar {
   position: absolute;
   bottom: 10px;
@@ -273,8 +286,7 @@ footer p {
     justify-content: center;
     border: 1px solid #2407e0;
     height: auto;
-    margin: 50px auto;
-    padding: 20px; } }
+    margin: 50px auto; } }
 
 @media (max-width: 400px) {
   body {
@@ -298,8 +310,7 @@ footer p {
     align-content: center;
     justify-content: center;
     border: 1px solid #2407e0;
-    height: auto;
-    width: 320px; } }
+    height: auto; } }
 
 /* animation main*/
 main,
@@ -448,8 +459,6 @@ main,
     margin-top: 88px; }
 
 /* media queris servicios */
-/* @media (min-with: 800px){
-} */
 @media (max-width: 1200px) {
   .container__servicio__capital__row {
     display: flex;
@@ -483,7 +492,6 @@ main,
 .main__reserva {
   grid-area: main; }
 
-/* main */
 /* main */
 .main__reserva__h1 {
   color: white;
@@ -521,21 +529,26 @@ main,
     margin: 0 auto; }
     .main__reserva__row__img {
       min-width: 310px; }
-  __qr__img {
-    display: none; } }
+    .main__reserva__row__qr__img {
+      display: none; } }
 
 @media (max-width: 600px) {
   .main__reserva__row {
-    width: 320px;
     display: flex;
     justify-content: space-around;
-    padding: 0; }
+    padding: 0;
+    width: 320px; }
     .main__reserva__row__img {
       min-width: 320px; }
     .main__reserva__row__qr__img {
       display: none; }
   .main__reserva__h1 {
-    font-size: 2em; } }
+    font-size: 2em; }
+  .main__reserva__p {
+    font-size: 1.5em;
+    text-align: center;
+    margin-top: 30px;
+    padding: 0; } }
 
 /* grid quienes somos */
 .main__quienessomos {
@@ -553,7 +566,9 @@ main,
   margin: auto auto;
   border: 1px solid #2407e0;
   padding: 25px;
-  box-shadow: 0px 0px 3px 0px white; }
+  box-shadow: 0px 0px 3px 0px white;
+  margin-top: 100px;
+  background: black; }
 
 .quienessomos__iframe {
   border-top: 2px solid blue;
@@ -567,16 +582,16 @@ iframe {
   border: 0;
   height: 100%; }
 
-.section__dos__quienessomos {
-  display: flex;
-  flex-wrap: wrap; }
-
+/* .section__dos__quienessomos {
+    display: flex;
+    flex-wrap: wrap;
+} */
 .section__dos__quienessomos p {
   padding: 25px;
   color: white; }
 
 /* media queries */
-@media (min-width: 1200px) {
+@media (max-width: 1200px) {
   .main__quienessomos {
     display: flex;
     flex-wrap: wrap;
@@ -588,7 +603,6 @@ iframe {
     flex-direction: column; }
   .quienessomos__p {
     margin-top: 100px;
-    width: 70%;
     background: black; }
   .section__dos__quienessomos {
     display: flex;
@@ -596,16 +610,21 @@ iframe {
     flex-direction: column;
     width: 100%; } }
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
+  .container__main__quienes__somos {
+    padding: 0; }
   .quienessomos__p {
     margin-top: 100px;
-    width: 70%;
-    background: black; } }
+    background: black;
+    font-size: 2em; } }
 
-@media (min-width: 310px) {
+@media (max-width: 310px) {
+  .container__main__quienes__somos {
+    padding: 0; }
   .quienessomos__p {
     margin-top: 100px;
-    background: black; } }
+    background: black;
+    /*  font-size:map-get($letras,t3); */ } }
 
 /* main carrousel de quienes somos */
 .carousel-inner {
@@ -641,9 +660,10 @@ iframe {
 
 .contacto__text {
   display: flex;
-  margin: 20px 0;
-  flex-wrap: wrap;
-  justify-content: center; }
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0; }
 
 .form-floating {
   width: 100%; }

@@ -1,10 +1,7 @@
 /* grid reserva tu lugar */
-
 .main__reserva {
     grid-area: main;
 }
-/* main */
-
 /* main */
 .main__reserva {
     @extend %main;
@@ -35,11 +32,9 @@
 .d-flex {
     flex-wrap: wrap;
 }
-
 .button__reserva {
     @extend %boton;
     display: block;
-    
 }
 @media (max-width: 768px) {
     .main__reserva__row {
@@ -49,17 +44,17 @@
         &__img {
                 min-width: 310px;
             }
-    }
-    &__qr__img {
-        display: none;
+        &__qr__img {
+            display: none;
+        }
     }
 }
 @media (max-width: 600px) {
     .main__reserva__row {
-        width: 320px;
         display: flex;
         justify-content: space-around;
         padding:0;
+        width: 320px;
         &__img {
             min-width: 320px;
         }
@@ -67,7 +62,15 @@
             display: none;
         }
     }    
-    .main__reserva__h1 {
+    .main__reserva {
+        &__h1{
         font-size: 2em;
+        }
+        &__p {
+            font-size:map-get($letras,t2);
+            text-align: center;
+            margin-top: 30px;
+            padding:0;
+        }
     }
 }

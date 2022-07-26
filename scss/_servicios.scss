@@ -1,10 +1,8 @@
 /* grid servicios */
-
 .main__servicios {
     grid-area: main;
 }
 /* servicos */
-
 .container__servicios {
     @extend %main;
     &__rows {
@@ -16,7 +14,6 @@
     }
 }
 /* container servicio capital */
-
 .container__servicio__capital {
     @extend %main ;
     &__h2{
@@ -38,8 +35,6 @@
     }
 }
 /* media queris servicios */
-/* @media (min-with: 800px){
-} */
 @media (max-width:1200px) {
     .container__servicio__capital__row {
         display: flex;
@@ -79,3 +74,9 @@
         padding: 10px;
     }
 }
+
+
+
+
+
+

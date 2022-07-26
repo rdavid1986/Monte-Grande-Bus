@@ -4,5 +4,11 @@ $main-background: linear-gradient(to bottom right, #1fafd1, #05138e, #05138ec2, 
 $border-main: 1px solid rgb(36, 7, 224);
 
 
-/* maps */
+/* mixin */
+@mixin flex ($disp, $dire, $flow, $aling, $justi) {
+    display: $disp;
+    flex-flow: $dire $flow;
+    align-items: $aling;
+    justify-content: $justi;
+}
 

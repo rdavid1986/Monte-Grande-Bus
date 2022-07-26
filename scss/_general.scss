@@ -235,6 +235,23 @@ header {
     padding-bottom: 50px;
     color: white;
 }
+.about-company h2 {
+    color: map-get($letras, p );
+}
+.direccion__caba {
+    display: flex;
+    color: map-get($letras, p);
+}
+.location {
+    h4 {
+        color: map-get($letras, p);
+    }
+}
+/* footer {
+    h4 {
+        font-size: map-get($letras,t3);
+    }
+} */
 footer p {
     margin-top: 30px;
     background-color: black;
@@ -270,9 +287,7 @@ footer p {
     border-radius: 25%;
     background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
 }
-.direccion__caba {
-    display: flex;
-}
+
 .boton__consultar {
     position: absolute;
     bottom: 10px;
@@ -292,8 +307,8 @@ footer p {
         border: $border-main;
         height: auto;
         margin: 50px auto;
-        padding: 20px;
-        }
+       
+    }
 }
 @media (max-width: 400px) {
     body {
@@ -328,7 +343,6 @@ footer p {
         justify-content: center;
         border: $border-main;
         height: auto;
-        width: 320px;
     }
 }
 
