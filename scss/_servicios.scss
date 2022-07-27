@@ -20,10 +20,15 @@
         text-align: center;
     }
     &__row {
+        /* @include flex (flex, row,  wrap, center, space-around); */
         margin-top: 50px;
     }
     &__ul {
         margin-top: 50px;
+        list-style: none;
+    }
+    &__row h4 {
+        text-align: center;
     }
 }
 
@@ -37,12 +42,10 @@
 /* media queris servicios */
 @media (max-width:1200px) {
     .container__servicio__capital__row {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        align-content: space-around;
+        @include flex (flex, column,  wrap, center, space-around);
     }
-    .container__servicio__capital__h {
+    .container__servicio__row__h {
+        text-align: center;
         margin-top: 40px;
         margin-bottom: 40px;
     }
@@ -58,6 +61,8 @@
         flex-wrap: wrap;
     }
     .container__servicio__capital {
+        @include flex (flex, column, wrap, center, space-around);
+        text-decoration: none;
         padding: 0;
     }
     .servicios__mapa {
@@ -67,6 +72,13 @@
 }
 
 @media (max-width: 600px) {
+    .container__servicio__capital {
+        @include flex (flex, row , wrap, center, space-evenly);
+      /*   display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly; */
+    }
     .servicios__2 {
         display: block;
     }
