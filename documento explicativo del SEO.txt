@@ -1,0 +1,9 @@
+Los cambios realizados para mejorar el SEO de mi proyecto fue la incorporacion de keywords ,
+ una descripcion y una pequeña modificacion a los titulos de cada pagina.
+Las keywords que agregue fueron las siguientes: 
+Monte Grande, Combi, combis, Viaje, caba, capital federal, obelisco, Buenos Aires ciudad, recorrido, correo,
+ boulevard buenos aires, sprinter, zona sur, terminal, turismo, transporte pasajeros, contacto, contactenos, envie su correo.
+el eje principal fueron las anteriormente citadas, las cuales fui modificando en las diferentes secciones
+ de mi pagina como correspondia segun la seccion.
+Agregue una descripcion en cada pagina dando referencia a que trata la misma .
+Y por ultimo la modificion de los titulos fue agregar en el titulo el nombre de la seccion de la pagina en la que te encuentras. 
