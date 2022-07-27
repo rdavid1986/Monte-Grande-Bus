@@ -70,9 +70,9 @@ p {
 /* container header */
 .container__header__nav__social {
   display: flex;
-  justify-content: space-evenly;
-  align-content: center;
-  flex-direction: row;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-around;
   margin: 30px auto;
   list-style: none; }
   .container__header__nav__social__li {
@@ -191,6 +191,7 @@ header {
   .container__header {
     height: auto; }
   .nav-tabs {
+    padding-top: 340px;
     flex-direction: column; } }
 
 @media (max-width: 768px) {
@@ -200,18 +201,20 @@ header {
     grid-template-columns: 100%;
     grid-template-rows: auto;
     grid-template-areas: "nav" "main" "header" "footer"; }
-  header ul {
-    display: flex;
-    flex-wrap: wrap;
-    align-content: center;
-    justify-content: space-around;
-    flex-direction: column; }
-  .nav-tabs {
-    flex-direction: column;
-    padding-top: 45%;
-    display: flex;
-    background-position: top;
-    align-content: flex-start; } }
+  /*   header ul {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: space-around;
+        flex-direction: column;
+    } */
+  /* .nav-tabs {
+        display: flex;
+        flex-direction: column;
+        align-content: flex-start;
+        background-position: top;
+        padding-top: 45%;
+    } */ }
 
 /* footer */
 .footer {
@@ -447,10 +450,15 @@ main,
   text-align: center; }
 
 .container__servicio__capital__row {
+  /* @include flex (flex, row,  wrap, center, space-around); */
   margin-top: 50px; }
 
 .container__servicio__capital__ul {
-  margin-top: 50px; }
+  margin-top: 50px;
+  list-style: none; }
+
+.container__servicio__capital__row h4 {
+  text-align: center; }
 
 .servicios__mapa {
   height: 550px;
@@ -462,10 +470,11 @@ main,
 @media (max-width: 1200px) {
   .container__servicio__capital__row {
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-content: space-around; }
-  .container__servicio__capital__h {
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: space-around; }
+  .container__servicio__row__h {
+    text-align: center;
     margin-top: 40px;
     margin-bottom: 40px; } }
 
@@ -477,12 +486,26 @@ main,
     display: flex;
     flex-wrap: wrap; }
   .container__servicio__capital {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: space-around;
+    text-decoration: none;
     padding: 0; }
   .servicios__mapa {
     max-width: 360px;
     padding: 40px; } }
 
 @media (max-width: 600px) {
+  .container__servicio__capital {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    /*   display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly; */ }
   .servicios__2 {
     display: block; }
   .container__servicios {

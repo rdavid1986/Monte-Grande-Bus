@@ -53,10 +53,7 @@ p {
 
 /* container header */
 .container__header__nav__social {
-    display: flex;
-    justify-content: space-evenly;
-    align-content: center;
-    flex-direction: row;
+    @include flex (flex, row, wrap, center, space-around);
     margin: 30px auto;
     list-style: none;
     &__li{
@@ -196,6 +193,7 @@ header {
         height: auto;
     }
     .nav-tabs {
+        padding-top: 340px;
         flex-direction: column;
     }
 }
@@ -212,20 +210,20 @@ header {
             "footer";
     }
 
-    header ul {
+  /*   header ul {
         display: flex;
         flex-wrap: wrap;
         align-content: center;
         justify-content: space-around;
         flex-direction: column;
-    }
-    .nav-tabs {
-        flex-direction: column;
-        padding-top: 45%;
+    } */
+    /* .nav-tabs {
         display: flex;
-        background-position: top;
+        flex-direction: column;
         align-content: flex-start;
-    }
+        background-position: top;
+        padding-top: 45%;
+    } */
 }
 /* footer */
 
@@ -236,15 +234,15 @@ header {
     color: white;
 }
 .about-company h2 {
-    color: map-get($letras, p );
+    color: map-get($letras, w );
 }
 .direccion__caba {
     display: flex;
-    color: map-get($letras, p);
+    color: map-get($letras, w);
 }
 .location {
     h4 {
-        color: map-get($letras, p);
+        color: map-get($letras, w);
     }
 }
 /* footer {
