@@ -17,7 +17,7 @@
 #galeria {
     @extend %main;
 }
-#galeria img {
+#galeria div img {
     width: 100%;
     margin: 10px 0;
     box-shadow: 1px 1px 3px 2px black;
@@ -48,7 +48,7 @@
     height: 100%;
 }
 #galeria10 {
-    height: 100%;
+    height: 97%;
 }
 @media (min-width: 768px) {
     #galeria9 {

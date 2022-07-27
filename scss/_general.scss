@@ -137,7 +137,7 @@ header {
 }
 .nav {
     background-color: rgb(0, 0, 0);
-    background-image: url(../img/bodybackground.jpg);
+    background-image: url(../img/navbackground/navbackground.jpg);
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: 1800px 600px;
@@ -147,7 +147,7 @@ header {
 }
 .nav-tabs .nav-link.active {
     transition: translate (-50%,-50%);
-    background-image: url("../img/fondocolorlogo.jpg");
+    background-image: url("../img/logo/fondocolorlogo.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 200px 50px;

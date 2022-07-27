@@ -143,7 +143,7 @@ header {
 
 .nav {
   background-color: black;
-  background-image: url(../img/bodybackground.jpg);
+  background-image: url(../img/navbackground/navbackground.jpg);
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: 1800px 600px; }
@@ -153,7 +153,7 @@ header {
 
 .nav-tabs .nav-link.active {
   transition: translate -50%, -50%;
-  background-image: url("../img/fondocolorlogo.jpg");
+  background-image: url("../img/logo/fondocolorlogo.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 200px 50px;
@@ -354,7 +354,7 @@ main,
   grid-area: footer; }
 
 /* galeria bootstrap */
-#galeria img {
+#galeria div img {
   width: 100%;
   margin: 10px 0;
   box-shadow: 1px 1px 3px 2px black;
@@ -385,7 +385,7 @@ main,
   height: 100%; }
 
 #galeria10 {
-  height: 100%; }
+  height: 97%; }
 
 @media (min-width: 768px) {
   #galeria9 {
