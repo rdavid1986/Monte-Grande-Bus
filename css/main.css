@@ -201,20 +201,18 @@ header {
     grid-template-columns: 100%;
     grid-template-rows: auto;
     grid-template-areas: "nav" "main" "header" "footer"; }
-  /*   header ul {
-        display: flex;
-        flex-wrap: wrap;
-        align-content: center;
-        justify-content: space-around;
-        flex-direction: column;
-    } */
-  /* .nav-tabs {
-        display: flex;
-        flex-direction: column;
-        align-content: flex-start;
-        background-position: top;
-        padding-top: 45%;
-    } */ }
+  header ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-around;
+    flex-direction: column; }
+  .nav-tabs {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    background-position: top;
+    padding-top: 45%; } }
 
 /* footer */
 .footer {
