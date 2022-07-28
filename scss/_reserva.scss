@@ -6,7 +6,7 @@
 .main__reserva {
     @extend %main;
     &__h1{
-        color: white;
+        color: map-get($letras, w);
         text-align: center;
         margin-top: 50px;
         margin-bottom: 100px;
@@ -22,7 +22,7 @@
         padding:50px;
     }
     &__h3 {
-        color: white;
+        color: map-get($letras,w);
         text-align: center;
         margin-top: 50px;
         margin-bottom: 100px;

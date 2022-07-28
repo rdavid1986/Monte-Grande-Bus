@@ -10,7 +10,7 @@
 .container__form {
     @extend %main;
     h1 {
-        color: white;
+        color: map-get($letras, w);
         text-align: center;
         margin-top: 50px;
         margin-bottom: 100px;
@@ -25,7 +25,7 @@
 }
 
 .form__opcion {
-    color: white;
+    color: map-get($letras,w);
 }
 
 .container__btn {
@@ -34,6 +34,6 @@
 .btn__contacto {
     @extend %boton;
     display: inline-block;
-    color: white;
+    color: map-get($letras, w);
     width: 200px;
 }

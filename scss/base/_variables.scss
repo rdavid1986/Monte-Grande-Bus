@@ -11,4 +11,7 @@ $border-main: 1px solid rgb(36, 7, 224);
     align-items: $aling;
     justify-content: $justi;
 }
-
+@mixin flexSimple($disp, $dire, $flow ){
+    display: $disp;
+    flex-flow: $dire $flow;
+}

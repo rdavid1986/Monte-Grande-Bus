@@ -20,7 +20,7 @@
         text-align: center;
     }
     &__row {
-        /* @include flex (flex, row,  wrap, center, space-around); */
+        @include flex (flex, row, wrap, center, space-around);
         margin-top: 50px;
     }
     &__ul {
@@ -73,11 +73,6 @@
 
 @media (max-width: 600px) {
     .container__servicio__capital {
-        @include flex (flex, row , wrap, center, space-evenly);
-      /*   display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-evenly; */
     }
     .servicios__2 {
         display: block;

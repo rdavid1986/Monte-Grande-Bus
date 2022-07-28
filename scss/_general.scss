@@ -212,10 +212,11 @@ header {
     }
 
     header ul {
-        display: flex;
+        @include flex (flex, row, wrap, center, space-around);
+        /* display: flex;
         flex-wrap: wrap;
         align-content: center;
-        justify-content: space-around;
+        justify-content: space-around; */
         flex-direction: column;
     }
     .nav-tabs {
@@ -227,7 +228,6 @@ header {
     }
 }
 /* footer */
-
 .footer {
     background: #152F4F;
     border: $border-main;
@@ -246,20 +246,12 @@ header {
         color: map-get($letras, w);
     }
 }
-/* footer {
-    h4 {
-        font-size: map-get($letras,t3);
-    }
-} */
 footer p {
     margin-top: 30px;
     background-color: black;
 }
 .footer__link {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    @include flex(flex, row, wrap, center, space-around)
     margin: 30px 0;
 }
 .copyright {
@@ -269,17 +261,14 @@ footer p {
     text-align: center;
 }
 .fa__social {
-    display: flex;
-    color: white;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+    @include flex(flex, column, wrap, center, space-evenly);
+    color: map-get($letras, w);
     height: 85px;
-    align-content: center;
     overflow: hidden;
 }
 .fa__face {
     color: #0055fff0;
-    background-color: white;
+    background-color: map-get($letras, w);
     border-radius: 19%
 }
 .fa__insta {
@@ -299,14 +288,13 @@ footer p {
         flex-direction: column;
     }
     .footer {
-        display: flex;
-        flex-wrap: wrap;
-        align-content: center;
-        justify-content: center;
+        @include flex (flex, row, wrap, center, center);
         border: $border-main;
         height: auto;
         margin: 50px auto;
-       
+    }
+    .fa__social {
+        height: 75px;
     }
 }
 @media (max-width: 400px) {
@@ -336,10 +324,7 @@ footer p {
         }
     }
     .footer {
-        display: flex;
-        flex-wrap: wrap;
-        align-content: center;
-        justify-content: center;
+        @include flex (flex, row, wrap, center, center);
         border: $border-main;
         height: auto;
     }

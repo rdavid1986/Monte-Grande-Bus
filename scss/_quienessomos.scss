@@ -4,10 +4,10 @@
     grid-area: main;
 }
 .quienessomos__h1 {
-    color: white;
-        text-align: center;
-        margin-top: 50px;
-        margin-bottom: 100px;
+    color: map-get($letras, w);
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 100px;
 }
 /* Quienes somos */
 .container__main__quienes__somos {
@@ -45,21 +45,10 @@ iframe {
 
 .section__dos__quienessomos p {
     padding: 25px;
-    color: white;
+    color: get-map($letras, w);
 }
 /* media queries */
 @media (max-width: 1200px) {
-    .main__quienessomos {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        width: 100%;
-    }
-    .section__uno__quienessomos {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-    }
     .quienessomos__p {
         margin-top: 100px;
         background: black;
@@ -99,15 +88,4 @@ iframe {
 
 .carousel-item {
     border: $border-main;
-}
-
-.carousel-item {
-    position: relative;
-    display: none;
-    float: left;
-    width: 100%;
-    margin-right: -100%;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    transition: transform .3s ease-in-out;
 }
