@@ -8,7 +8,7 @@ html {
 }
 body {
     min-height: 100%;
-    font-family: "Helvetica Neue", Helvetica;
+    font-family: "Helvetica Neue", "Helvetica";
     height: 100%;
     width: 100%;
     margin: 0 auto;
@@ -27,8 +27,9 @@ body {
         "main"
         "footer";
 }
+
 p {
-    color: white;
+    color: map-get($letras, w);
 }
 
 /* Images */
@@ -81,11 +82,11 @@ p {
     .container__header {
         display: grid;
         flex-wrap: wrap;
+        justify-items: end;
         justify-content: space-evenly;
         background: $header-background;
-        width: 100%;
         border: $border-main;
-        justify-items: end;
+        width: 100%;
         margin-bottom:3px;
     }
 }
@@ -130,9 +131,9 @@ header {
     flex-wrap: wrap;
     justify-content: space-evenly;
     background: $header-background;
+    border: $border-main;
     width: 100%;
     height: 120px;
-    border: $border-main;
     margin-bottom:3px;
 }
 .nav {
@@ -182,9 +183,9 @@ header {
         flex-wrap: wrap;
         justify-content: space-evenly;
         background: $header-background;
+        border: $border-main;
         width: 100%;
         height: 120px;
-        border: $border-main;
         margin-bottom:3px;
     }
 }
