@@ -369,10 +369,10 @@ main,
   height: 100%; }
 
 #galeria3 {
-  height: 97.3%; }
+  height: -webkit-fill-available; }
 
 #galeria4 {
-  height: 96%; }
+  height: 94%; }
 
 #galeria5 {
   height: 96%; }
@@ -438,7 +438,7 @@ main,
   #galeria9 {
     height: 97%; }
   #galeria4 {
-    height: 97.3%; } }
+    height: 96%; } }
 
 @media (max-width: 768px) {
   .item__galeria {
