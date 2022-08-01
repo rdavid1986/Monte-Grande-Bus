@@ -5,13 +5,13 @@
 /* servicos */
 .container__servicios {
     @extend %main;
-    &__rows {
-        margin-bottom: 50px;
-    }
     &__h2 {
         text-align: center;
-        margin-bottom: 100px;
+        margin-bottom: 50px;
     }
+}
+.column__servicios_margintop {
+    margin-top:40px;
 }
 /* container servicio capital */
 .container__servicio__capital {
@@ -21,7 +21,6 @@
     }
     &__row {
         @include flex (flex, row, wrap, center, space-around);
-        margin-top: 50px;
     }
     &__ul {
         margin-top: 50px;
@@ -52,7 +51,6 @@
 }
 
 @media (max-width: 768px) {
-
     .container,
     .container-md,
     .container-sm {
@@ -79,6 +77,9 @@
     }
     .container__servicios {
         padding: 10px;
+    }
+    .container__servicios__row {
+        margin-top:550px;
     }
 }
 
