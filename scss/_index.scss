@@ -28,9 +28,14 @@
 }
 .boton__scale {
     height: 100%;
+    width: 100%;
+    
+}
+.col__galeria__3 {
+    overflow: hidden;
 }
 #galeria3 {
-    height: -webkit-fill-available;
+    height: 97.5%;
 }
 #galeria4 {
     height: 94%;
