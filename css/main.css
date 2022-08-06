@@ -99,19 +99,26 @@ p {
   width: 60px; }
 
 .logo-playstore {
-  width: 200px; }
+  width: 20px; }
 
 /* container header */
+.header__container {
+  background: linear-gradient(to bottom right, white, white, #1fafd1, #05138e, #05138e, white);
+  border: 1px solid #2407e0;
+  width: 100%;
+  height: 120px;
+  margin-bottom: 3px; }
+
 .header__ul {
   display: flex;
   flex-flow: row wrap;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
   margin: 30px auto;
   list-style: none; }
 
 .header__li {
-  margin-right: 60px; }
+  margin-right: 10px; }
 
 .h2 {
   background-color: black;
@@ -124,69 +131,260 @@ p {
   margin: 120px 0; }
 
 /* nav */
-header {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center; }
-
-.header__container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  background: linear-gradient(to bottom right, white, white, #1fafd1, #05138e, #05138e, white);
-  border: 1px solid #2407e0;
-  width: 100%;
-  height: 120px;
-  margin-bottom: 3px; }
-
-.nav {
-  background-color: black;
-  background-image: url(../img/navbackground/navbackground.jpg);
-  background-repeat: no-repeat;
-  background-position: bottom;
-  background-size: 1800px 600px; }
-
-.nav-tabs > .nav-item > .nav-link {
-  color: #fafafa; }
-
-.nav-tabs .nav-link.active {
-  transition: translate -50%, -50%;
-  background-image: url("../img/logo/fondocolorlogo.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 200px 50px;
-  width: 200px;
-  text-align: center; }
-
 .nav-tabs {
-  padding-top: 550px;
-  width: 98%;
-  display: flex;
-  justify-content: space-around; }
-
-.tab-content > .active {
   display: none; }
 
-/* Media queries header */
-@media (max-width: 861px) {
-  .header__container {
-    height: auto; }
-  .nav-tabs {
-    padding-top: 340px;
-    flex-direction: column; } }
-
-@media (max-width: 768px) {
-  .nav-tabs {
+/* .nav__links {
+    list-style: none;
+} */
+/* .header__container {
     display: flex;
-    flex-direction: column;
-    align-content: flex-start;
-    background-position: top;
-    padding-top: 45%; } }
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background: $header-background;
+    border: $border-main;
+    width: 100%;
+    height: 120px;
+    margin-bottom: 3px;
+} */
+/* .header__ul {
+    list-style: none;
+} */
+@media (max-width: 768px) {
+  .header__container {
+    display: none; }
+  .logomgb {
+    margin: 0 auto;
+    width: 280px; }
+  .logo-facebook {
+    border-radius: 50%;
+    width: 30px; }
+  .logo-instagram {
+    border-radius: 25%;
+    width: 30px; }
+  .logo-playstore {
+    width: 30px; }
+  .header__container {
+    height: 60px; }
+  .header__ul {
+    margin: 10px auto; }
+  .container__nav {
+    width: 100%;
+    max-width: 1200px;
+    overflow: hidden;
+    background: linear-gradient(to bottom right, white, white, #1fafd1, #05138e, #05138e, white);
+    border: 1px solid #2407e0; }
+  .obelisco {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url("../img/navbackground/navbackground.jpg");
+    background-size: cover;
+    background-position: center;
+    min-height: 500px;
+    height: 100vh;
+    color: #fff; }
+  .nav {
+    --state-menu: translate(-100%);
+    --state-close: scale(0);
+    --state-hamburguer: scale(1);
+    margin-top: 0;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    grid-template-columns: repeat(2, max-content); }
+  .nav:target {
+    --state-menu: translate(0);
+    --state-close: scale(1);
+    --state-hamburguer: scale(0); }
+  .nav__logo {
+    font-size: 2.5rem;
+    z-index: 1; }
+  .nav__hamburguer,
+  .nav__close {
+    cursor: pointer;
+    grid-column: -2/-1;
+    grid-row: 1/2;
+    transition: .5s transform;
+    z-index: 1; }
+  .nav__hamburguer {
+    transform: var(--state-hamburguer); }
+  .nav__close {
+    position: absolute;
+    right: 0;
+    transform: var(--state-close); }
+  .nav__icon {
+    width: 40px; }
+  .nav-tabs {
+    background-color: black;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 0;
+    display: grid;
+    align-content: center;
+    justify-content: space-around;
+    gap: 2em;
+    padding-left: 5%;
+    /* border-radius: 50%;
+        transform: scale(23); */
+    transform: var(--state-menu);
+    transition: .2s transform;
+    transition-timing-function: ease-out;
+    transform: scale();
+    z-index: 1; }
+  .nav-item {
+    list-style: none; }
+  .nav-link {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    letter-spacing: 2px; }
+  #galeria {
+    margin-top: 5px;
+    padding: 0; } }
 
-@media (max-width: 541px) {
-  .li_googlestore {
-    margin-top: 30px; } }
+/* header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.header__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background: $header-background;
+    border: $border-main;
+    width: 100%;
+    height: 120px;
+    margin-bottom:3px;
+}
+.nav {
+    background-color: rgb(0, 0, 0);
+    background-image: url(../img/navbackground/navbackground.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 1800px 600px;
+}
+.nav-tabs>.nav-item>.nav-link {
+    color: rgb(250, 250, 250);
+}
+.nav-tabs .nav-link.active {
+    transition: translate (-50%,-50%);
+    background-image: url("../img/logo/fondocolorlogo.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 200px 50px;
+    width: 200px;
+    text-align: center;
+}
+.nav-tabs { 
+    padding-top: 550px;
+    width: 98%;
+    display: flex;
+    justify-content: space-around;
+}
+.tab-content>.active {
+    display: none;
+}
+.nav__close, .nav__hamburguer{
+    display: none;
+}
+/* Media queries header */
+/* @media (max-width:768px) {
+    .header {
+        display: flex;
+        width: 100%;
+        height: 20em;
+        background: red;
+    } */
+/*   .container {
+        margin: 0 auto;
+        width: 90%;
+        max-width: 1200px;
+        overflow: hidden;
+    } */
+/*     .nav {
+        --state-menu: translate(-100%);
+        --state-close: scale(0);
+        --state-hamburguer: scale(1);
+    
+        padding: 40px 0;
+        display: grid;
+        justify-content: space-between;
+        align-items: center;
+        grid-template-columns: repeat(2, max-content);
+    }
+    .nav:target {
+        --state-menu: translate(1);
+        --state-close: scale(0);
+        --state-hamburguer: scale(0);
 
+    }
+    .nav__close,
+    .nav__hamburguer {
+        display: grid;
+        cursor: pointer;
+        grid-column: -2/-1;
+        grid-row: 1/2;
+        transition: .5s transform;
+        z-index: 1;
+    }
+    .nav__hamburguer {
+        transform: var(--state-hamburguer);
+    }
+
+    .nav__close {
+        transform: var(--state-close);
+    }
+    .nav-tabs {
+        background-color: black;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        padding: 0;
+
+        display: grid;
+        align-content: center;
+        justify-content: space-around;
+        gap: 2em;
+        padding-left: 5%;
+        /* border-radius: 50%;
+    transform: scale(23); */
+/*       transform: var(--state-menu);
+        transition: .2s transform;
+        transition-timing-function: ease-out;
+        transform: scale();
+        z-index: 1;
+    }
+}  */
+/* @media (max-width: 861px) {
+    .header__container {
+        height: auto;
+    }
+    .nav-tabs {
+        padding-top: 340px;
+        flex-direction: column;
+    }
+} */
+/* @media (max-width: 768px) {
+    .nav-tabs {
+        display: flex;
+        flex-direction: column;
+        align-content: flex-start;
+        background-position: top;
+        padding-top: 45%;
+    }
+} */
+/* @media (max-width: 541px){
+    .li_googlestore {
+        margin-top: 30px;
+    }
+} */
 /* footer */
 .footer {
   background: #152F4F;
