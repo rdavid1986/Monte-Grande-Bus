@@ -273,6 +273,8 @@ p {
     right: 25px;
     transform: var(--state-close); }
   .nav__icon {
+    background-color: black;
+    border-radius: 15%;
     width: 40px;
     display: unset; }
   .nav-tabs {
