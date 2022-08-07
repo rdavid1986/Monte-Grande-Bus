@@ -114,7 +114,7 @@ p {
   flex-flow: row wrap;
   align-items: center;
   justify-content: space-evenly;
-  margin: 30px auto;
+  margin: 20px auto;
   list-style: none; }
 
 .header__li {
@@ -137,11 +137,11 @@ p {
 /* .nav__links {
     list-style: none;
 } */
-/* .header__container {
+/* .container__nav {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    background: $header-background;
+    background-size: 1800px 800px;
     border: $border-main;
     width: 100%;
     height: 120px;
@@ -151,7 +151,7 @@ p {
     list-style: none;
 } */
 .container__nav {
-  width: 95%;
+  width: 100%;
   height: 600px; }
 
 .logomgb__768 {
@@ -160,12 +160,64 @@ p {
 .header__li {
   display: contents; }
 
+.header__li a {
+  display: flex;
+  align-items: end;
+  text-decoration: none; }
+
+.header__li a p {
+  margin-left: 25px; }
+
 .descarga__apk {
   margin: 0; }
 
-@media (max-width: 768px) {
+.nav-tabs {
+  background-position: center;
+  list-style: none;
+  width: 100%; }
+
+.nav__icon {
+  display: contents; }
+
+.nav-tabs {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  background-color: black;
+  background-image: url(../img/navbackground/navbackground.jpg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 1800px 600px;
+  padding-top: 550px; }
+
+.nav-tabs > .nav-item > .nav-link {
+  color: #fafafa; }
+
+.nav-tabs .nav-link.active {
+  transition: translate -50%, -50%;
+  background-image: url("../img/logo/fondocolorlogo.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 200px 50px;
+  width: 200px;
+  text-align: center; }
+
+/* @media (max-width: 900px){
+    .nav-tabs {
+        display: initial;
+        padding-top:70px;
+    }
+} */
+@media (max-width: 900px) {
   .header__container {
     display: none; }
+  .header__ul {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 30px auto;
+    list-style: none; }
   .logomgb {
     position: absolute;
     top: 500px;
@@ -182,20 +234,24 @@ p {
     margin: 10px auto; }
   .container__nav {
     width: 100%;
-    max-width: 768px;
+    max-width: 900px;
     height: 600px;
     overflow: hidden;
     background: url("../img/navbackground/navbackground.jpg");
     background-position: center;
     background-size: cover;
     border: 1px solid #2407e0; }
-  .obelisco {
+  #obelisco {
+    display: flex;
+    list-style: none;
     background-image: url("../img/navbackground/hamburguesa.jpg");
+    background-position: center;
     background-size: cover;
-    background-position: left;
-    min-height: 500px;
+    min-height: 900px;
     height: 100vh;
-    color: #fff; }
+    padding-top: 5px;
+    color: #fff;
+    border: 1px solid #2407e0; }
   .nav {
     --state-menu: translate(-100%);
     --state-close: scale(0);
@@ -211,9 +267,10 @@ p {
     --state-menu: translate(0);
     --state-close: scale(1);
     --state-hamburguer: scale(0); }
-  .nav__logo {
-    font-size: 2.5rem;
-    z-index: 1; }
+  .logomgb__768 {
+    display: unset;
+    position: absolute;
+    bottom: 190px; }
   .nav__hamburguer,
   .nav__close {
     cursor: pointer;
@@ -232,7 +289,8 @@ p {
     right: 25px;
     transform: var(--state-close); }
   .nav__icon {
-    width: 40px; }
+    width: 40px;
+    display: unset; }
   .nav-tabs {
     background-color: black;
     position: absolute;
@@ -288,35 +346,12 @@ header {
     height: 120px;
     margin-bottom:3px;
 } */
-.nav-tabs {
-  background-color: black;
-  background-image: url(../img/navbackground/navbackground.jpg);
-  background-repeat: no-repeat;
-  background-position: bottom;
-  background-size: 1800px 600px; }
-
-.nav-tabs > .nav-item > .nav-link {
-  color: #fafafa; }
-
-.nav-tabs .nav-link.active {
-  transition: translate -50%, -50%;
-  background-image: url("../img/logo/fondocolorlogo.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 200px 50px;
-  width: 200px;
-  text-align: center; }
-
-.nav-tabs {
-  padding-top: 550px;
-  width: 98%;
-  display: flex;
-  justify-content: space-around; }
-
+/* .nav-tabs { 
+    padding-top: 550px;
+    display: flex;
+    justify-content: space-around;
+} */
 .tab-content > .active {
-  display: none; }
-
-.nav__close, .nav__hamburguer {
   display: none; }
 
 /* Media queries header
