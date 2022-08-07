@@ -192,12 +192,7 @@ p {
     width: 200px;
     text-align: center;
 }
-/* @media (max-width: 900px){
-    .nav-tabs {
-        display: initial;
-        padding-top:70px;
-    }
-} */
+
 @media (max-width: 900px){
     .header{
         &__container {
@@ -314,7 +309,7 @@ p {
         display: flex;
         flex-direction: column;
         align-content: center;
-        justify-content: space-around;
+        justify-content: space-evenly;
         padding-left: 5%;
         transform: var(--state-menu);
         transition: .2s transform;
@@ -332,7 +327,7 @@ p {
         letter-spacing: 2px;
     }
     #galeria {
-        margin-top: 5px;
+        margin-top: 50px;
         padding: 0;
     }
     .nav-tabs .nav-link.active {
