@@ -160,7 +160,8 @@ p {
         display: none;
     }
     .logomgb {
-        margin: 0 auto;
+        position: absolute;
+        top: 500px;
         width: 280px;
     }
     .logo-facebook {
@@ -184,15 +185,18 @@ p {
     }
     .container__nav {
         width: 100%;
-        max-width: 1200px;
+        max-width: 768px;
+        height:600px;
         overflow: hidden;
-        background: $header-background;
+        background: url("../img/navbackground/navbackground.jpg");
+        background-position: center;
+        background-size: cover;
         border: $border-main;
     }
     .obelisco {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url("../img/navbackground/navbackground.jpg");
+        background-image: url("../img/navbackground/hamburguesa.jpg");
         background-size: cover;
-        background-position: center;
+        background-position: left;
         min-height: 500px;
         height: 100vh;
         color: #fff;
@@ -229,11 +233,15 @@ p {
         z-index: 1;
     }
     .nav__hamburguer {
+        position: absolute;
+        top: 45px;
+        right: 25px;
         transform: var(--state-hamburguer);
     }
     .nav__close {
         position: absolute;
-        right: 0;
+        top: 45px;
+        right: 25px;
         transform: var(--state-close);
     }
     .nav__icon {
@@ -248,19 +256,14 @@ p {
         left: 0;
         padding: 0;
 
-        display: grid;
+        display: flex;
+        flex-direction: column;
         align-content: center;
         justify-content: space-around;
-        gap: 2em;
-        
         padding-left: 5%;
-        /* border-radius: 50%;
-        transform: scale(23); */
-
         transform: var(--state-menu);
         transition: .2s transform;
         transition-timing-function: ease-out;
-        transform: scale();
         z-index: 1;
     }
     .nav-item {
@@ -276,6 +279,18 @@ p {
     #galeria {
         margin-top: 5px;
         padding: 0;
+    }
+    .nav-tabs .nav-link.active {
+        color: white;
+        background: $main-background;
+        border-image: $main-background;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 2190px 60px;
+        width: 245px;
+        height: 58;
+        border-radius: 2%;
+        text-align: center;
     }
 }
 /* header {

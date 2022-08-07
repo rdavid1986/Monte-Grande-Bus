@@ -13,7 +13,10 @@
     grid-area: footer;
 }
 /* galeria bootstrap */
-
+.link__call {
+    color: #1fafd1;
+    text-decoration: none;
+}
 #galeria {
     @extend %main;
 }
