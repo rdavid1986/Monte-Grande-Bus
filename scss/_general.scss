@@ -236,23 +236,36 @@ p {
         border: $border-main;
     }
     #obelisco {
-        display: flex;
-        list-style: none;
         background-image: url("../img/navbackground/hamburguesa.jpg");
-        background-position: center;
+        background-position: left;
         background-size: cover;
         min-height: 900px;
         height: 100vh;
-        padding-top: 5px;
         color: #fff;
         border: $border-main;
+    }
+    .nav-tabs {
+        background-color: black;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: space-evenly;
+        transform: var(--state-menu);
+        transition: .2s transform;
+        transition-timing-function: ease-out;
+        z-index: 1;
     }
     .nav {
         --state-menu: translate(-100%);
         --state-close: scale(0);
         --state-hamburguer: scale(1);
         margin-top:0;
-        padding: 10px 0;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -297,25 +310,7 @@ p {
         width: 40px;
         display: unset;
     }
-    .nav-tabs {
-        background-color: black;
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        padding: 0;
-
-        display: flex;
-        flex-direction: column;
-        align-content: center;
-        justify-content: space-evenly;
-        padding-left: 5%;
-        transform: var(--state-menu);
-        transition: .2s transform;
-        transition-timing-function: ease-out;
-        z-index: 1;
-    }
+   
     .nav-item {
         list-style: none;
     }
@@ -328,7 +323,6 @@ p {
     }
     #galeria {
         margin-top: 50px;
-        padding: 0;
     }
     .nav-tabs .nav-link.active {
         color: white;
@@ -337,7 +331,6 @@ p {
         background-repeat: no-repeat;
         background-position: center;
         background-size: 2190px 60px;
-        width: 245px;
         height: 58;
         border-radius: 2%;
         text-align: center;
