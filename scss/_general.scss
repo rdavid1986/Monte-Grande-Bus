@@ -209,7 +209,7 @@ p {
     }
     .logo-facebook {
         border-radius: 50%;
-        width: 30px;
+        width: 25px;
     }
     .logo-instagram {
         border-radius: 25%;
@@ -279,7 +279,7 @@ p {
     .logomgb__768 {
         display: unset;
         position: absolute;
-        bottom: 190px;
+        bottom: 240px;
     }
     .nav__hamburguer,
     .nav__close {
@@ -411,9 +411,6 @@ footer p {
         border: $border-main;
         height: auto;
         margin: 50px auto;
-    }
-    .fa__social {
-        height: 75px;
     }
 }
 @media (max-width: 400px) {
