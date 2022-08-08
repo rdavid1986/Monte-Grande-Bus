@@ -178,13 +178,11 @@ p {
   color: #fafafa; }
 
 .nav-tabs .nav-link.active {
-  transition: translate -50%, -50%;
   background-image: url("../img/logo/fondocolorlogo.jpg");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 200px 50px;
-  width: 200px;
-  text-align: center; }
+  text-align: center;
+  width: 250px; }
 
 @media (max-width: 900px) {
   .header__container {
@@ -295,13 +293,12 @@ p {
     margin-top: 50px; }
   .nav-tabs .nav-link.active {
     color: white;
-    background: linear-gradient(to bottom right, #1fafd1, #05138e, #05138ec2, #1fafd1);
+    background-color: #ff00;
+    background-image: url("../img/logo/fondocolorlogo.jpg");
     border-image: linear-gradient(to bottom right, #1fafd1, #05138e, #05138ec2, #1fafd1);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 2190px 60px;
-    height: 58;
-    border-radius: 2%;
+    border-radius: 1%;
     text-align: center; } }
 
 header {
@@ -319,7 +316,7 @@ header {
   padding-bottom: 50px;
   color: white; }
   .footer__h2-modificador {
-    margin-top: 30px; }
+    margin-top: 50px; }
 
 .about-company h2 {
   color: white; }
