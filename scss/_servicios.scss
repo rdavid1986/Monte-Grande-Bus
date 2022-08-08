@@ -5,6 +5,7 @@
 /* servicos */
 .container__servicios {
     @extend %main;
+    padding: 50px;
     &__h2 {
         text-align: center;
         margin-bottom: 50px;
@@ -17,6 +18,7 @@
 /* container servicio capital */
 .container__servicio__capital {
     @extend %main ;
+    padding:50px;
     &__h2{
         margin-top: 30px;
         text-align: center;

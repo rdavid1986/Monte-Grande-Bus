@@ -19,6 +19,7 @@
 }
 #galeria {
     @extend %main;
+    padding: 50px;
 }
 #galeria div img {
     width: 100%;
@@ -129,5 +130,8 @@
     .col__galeria__6 {
         display: flex;
         justify-content: space-around;
+    }
+    #galeria {
+        padding: 0;
     }
 }

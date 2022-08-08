@@ -18,7 +18,7 @@
   border: 2px solid blue;
   color: white;
   margin-top: 50px;
-  padding: 50px; }
+  padding-top: 50px; }
 
 /* map */
 /* general */
@@ -313,7 +313,7 @@ header {
 .footer {
   background: #152F4F;
   border: 1px solid #2407e0;
-  padding-bottom: 50px;
+  padding: 50px;
   color: white; }
   .footer__h2-modificador {
     margin-top: 50px; }
@@ -434,6 +434,9 @@ main,
   color: #1fafd1;
   text-decoration: none; }
 
+#galeria {
+  padding: 50px; }
+
 #galeria div img {
   width: 100%;
   margin-top: 20px;
@@ -532,38 +535,41 @@ main,
     display: flex; }
   .col__galeria__6 {
     display: flex;
-    justify-content: space-around; } }
+    justify-content: space-around; }
+  #galeria {
+    padding: 0; } }
 
 /* grid servicios */
 .main__servicios {
   grid-area: main; }
 
 /* servicos */
-.container__servicios__h2 {
-  text-align: center;
-  margin-bottom: 50px;
-  margin-top: 30px; }
+.container__servicios {
+  padding: 50px; }
+  .container__servicios__h2 {
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 30px; }
 
 .column__servicios_margintop {
   margin-top: 40px; }
 
 /* container servicio capital */
-.container__servicio__capital__h2 {
-  margin-top: 30px;
-  text-align: center; }
-
-.container__servicio__capital__row {
-  display: flex;
-  flex-flow: row wrap;
-  align-items: center;
-  justify-content: space-around; }
-
-.container__servicio__capital__ul {
-  margin-top: 50px;
-  list-style: none; }
-
-.container__servicio__capital__row h4 {
-  text-align: center; }
+.container__servicio__capital {
+  padding: 50px; }
+  .container__servicio__capital__h2 {
+    margin-top: 30px;
+    text-align: center; }
+  .container__servicio__capital__row {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-around; }
+  .container__servicio__capital__ul {
+    margin-top: 50px;
+    list-style: none; }
+  .container__servicio__capital__row h4 {
+    text-align: center; }
 
 .servicios__mapa {
   height: 550px;

@@ -2,7 +2,9 @@
 $header-background: linear-gradient(to bottom right, white, white, #1fafd1, #05138e, #05138e, white);
 $main-background: linear-gradient(to bottom right, #1fafd1, #05138e, #05138ec2, #1fafd1);
 $border-main: 1px solid rgb(36, 7, 224);
-
+$menu: translate(-100%);
+$close: scale(0);
+$hamburguer: scale(1);
 
 /* mixin */
 @mixin flex ($disp, $dire, $flow, $aling, $justi) {
