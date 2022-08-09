@@ -403,11 +403,9 @@ footer p {
         margin: 50px auto;
     }
     .fa__social {
-    @include flex(flex, column, wrap, center, space-evenly);
-    color: map-get($letras, w);
     height: 75px;
     overflow: hidden;
-}
+    }
 }
 @media (max-width: 400px) {
     .footer {
