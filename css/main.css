@@ -289,8 +289,6 @@ p {
     text-decoration: none;
     font-size: 1.2rem;
     letter-spacing: 2px; }
-  #galeria {
-    margin-top: 50px; }
   .nav-tabs .nav-link.active {
     color: white;
     background-color: #ff00;
@@ -435,7 +433,8 @@ main,
   text-decoration: none; }
 
 #galeria {
-  padding: 50px; }
+  padding-bottom: 50px;
+  padding: 10px; }
 
 #galeria div img {
   width: 100%;
@@ -519,6 +518,11 @@ main,
 #evento__click10:checked ~ .col__galeria__10 {
   transform: scale(1.5); }
 
+@media (max-width: 900px) {
+  #galeria {
+    padding-bottom: 50px;
+    margin-top: 50px; } }
+
 @media (min-width: 768px) {
   #galeria9 {
     height: 97%; }
@@ -535,9 +539,7 @@ main,
     display: flex; }
   .col__galeria__6 {
     display: flex;
-    justify-content: space-around; }
-  #galeria {
-    padding: 0; } }
+    justify-content: space-around; } }
 
 /* grid servicios */
 .main__servicios {
@@ -608,9 +610,8 @@ main,
     padding: 40px; } }
 
 @media (max-width: 600px) {
-  .servicios__2 {
-    display: block; }
   .container__servicios {
+    display: block;
     padding: 10px; }
   .container__servicios__row {
     margin-top: 550px; } }
@@ -652,7 +653,6 @@ main,
 @media (max-width: 768px) {
   .main__reserva__row {
     width: 400px;
-    padding: 0;
     margin: 0 auto; }
     .main__reserva__row__img {
       min-width: 310px; }
@@ -760,11 +760,16 @@ iframe {
 .container {
   color: gray; }
 
-.container__form h1 {
-  color: white;
-  text-align: center;
-  margin-top: 50px;
-  margin-bottom: 100px; }
+.container__form {
+  padding-bottom: 50px; }
+  .container__form h1 {
+    color: white;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 100px; }
+
+.form-floating {
+  margin-bottom: 15px; }
 
 .contacto__text {
   display: flex;

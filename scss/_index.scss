@@ -19,7 +19,8 @@
 }
 #galeria {
     @extend %main;
-    padding: 50px;
+    padding-bottom:50px;
+    padding: 10px;
 }
 #galeria div img {
     width: 100%;
@@ -104,10 +105,14 @@
 #evento__click10:checked~.col__galeria__10 {
     transform: scale(1.5);
 }
-@media (min-width: 768px) {
-    #galeria3 {
-
+@media (max-width: 900px) {
+    #galeria {
+        padding-bottom: 50px;
+        margin-top: 50px;
     }
+}
+@media (min-width: 768px) {
+
     #galeria9 {
         height: 97%;
     }
@@ -130,8 +135,5 @@
     .col__galeria__6 {
         display: flex;
         justify-content: space-around;
-    }
-    #galeria {
-        padding: 0;
     }
 }

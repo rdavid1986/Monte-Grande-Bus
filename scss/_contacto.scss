@@ -9,12 +9,16 @@
 }
 .container__form {
     @extend %main;
+    padding-bottom: 50px;
     h1 {
         color: map-get($letras, w);
         text-align: center;
         margin-top: 50px;
         margin-bottom: 100px;
     }
+}
+.form-floating {
+    margin-bottom: 15px;
 }
 .contacto__text {
     @include flex( flex, row, wrap, center ,center );

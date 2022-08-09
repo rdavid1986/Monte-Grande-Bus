@@ -74,12 +74,8 @@
 }
 
 @media (max-width: 600px) {
-    .container__servicio__capital {
-    }
-    .servicios__2 {
-        display: block;
-    }
     .container__servicios {
+        display: block;
         padding: 10px;
     }
     .container__servicios__row {
