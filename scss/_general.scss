@@ -122,7 +122,6 @@ p {
         margin-right: 10px;
     }
 }
-
 .h2 {
     background-color: black;
     border: $border-main;
@@ -134,7 +133,6 @@ p {
     margin: 120px 0;
 }
 /* nav */
-
 .container__nav {
     width: 100%;
     height: 600px;
@@ -154,7 +152,6 @@ p {
     color: lightgray;
     margin-bottom: 15px;
     margin-left: 25px;
-  
 }
 .descarga__apk {
     margin: 0;
@@ -178,11 +175,9 @@ p {
     background-size: 1800px 600px;
     padding-top: 550px;
 }
-
 .nav-tabs>.nav-item>.nav-link {
     color: rgb(250, 250, 250);
 }
-
 .nav-tabs .nav-link.active {
     background-image: url("../img/logo/fondocolorlogo.jpg");
     background-repeat: no-repeat;
@@ -190,7 +185,6 @@ p {
     text-align: center;
     width: 250px;
 }
-
 @media (max-width: 900px){
     .header{
         &__container {
@@ -268,13 +262,11 @@ p {
         justify-content: space-between;
         align-items: flex-start;
         grid-template-columns: repeat(2, max-content);
-
     }
     .nav:target {
         --state-menu: translate(0);
         --state-close: scale(1);
         --state-hamburguer: scale(0);
-
     }
     .logomgb__768 {
         display: unset;
