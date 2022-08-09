@@ -17,9 +17,12 @@
     color: #1fafd1;
     text-decoration: none;
 }
+.mainpadding {
+    padding-top: 50px;
+}
 #galeria {
     @extend %main;
-    padding-bottom:50px;
+    padding-bottom: 50px;
     padding: 10px;
 }
 #galeria div img {
