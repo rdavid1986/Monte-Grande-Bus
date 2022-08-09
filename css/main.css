@@ -635,17 +635,19 @@ main,
   width: 110%; }
 
 .main__reserva__row__qr__img {
-  padding: 20px;
-  margin: 30px; }
+  margin: 5px; }
 
 .main__reserva__p {
-  padding: 50px; }
+  padding: 30px; }
 
 .main__reserva__h3 {
   color: white;
   text-align: center;
   margin-top: 50px;
   margin-bottom: 100px; }
+
+.img__qr {
+  width: 220px; }
 
 /* contenedor de QR */
 .d-flex {

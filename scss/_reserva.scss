@@ -15,11 +15,10 @@
         width: 110%;
     }
     &__row__qr__img {
-        padding: 20px;
-        margin: 30px;
+        margin: 5px;
     }
     &__p {
-        padding:50px;
+        padding:30px;
     }
     &__h3 {
         color: map-get($letras,w);
@@ -27,6 +26,9 @@
         margin-top: 50px;
         margin-bottom: 100px;
     }
+}
+.img__qr {
+    width: 220px;
 }
 /* contenedor de QR */
 .d-flex {
