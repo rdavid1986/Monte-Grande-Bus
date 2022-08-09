@@ -378,7 +378,15 @@ footer p {
     justify-content: center;
     border: 1px solid #2407e0;
     height: auto;
-    margin: 50px auto; } }
+    margin: 50px auto; }
+  .fa__social {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    color: white;
+    height: 75px;
+    overflow: hidden; } }
 
 @media (max-width: 400px) {
   .footer {
