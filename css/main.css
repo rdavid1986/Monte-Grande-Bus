@@ -141,16 +141,14 @@ p {
 
 .header__li {
   display: contents; }
-
-.header__li a {
-  display: flex;
-  align-items: end;
-  text-decoration: none; }
-
-.header__li a p {
-  color: lightgray;
-  margin-bottom: 15px;
-  margin-left: 25px; }
+  .header__li a {
+    display: flex;
+    align-items: end;
+    text-decoration: none; }
+    .header__li a p {
+      color: lightgray;
+      margin-bottom: 15px;
+      margin-left: 25px; }
 
 .descarga__apk {
   margin: 0; }
@@ -315,6 +313,12 @@ header {
   color: white; }
   .footer__h2-modificador {
     margin-top: 50px; }
+  .footer__link {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-around;
+    margin: 30px 0; }
 
 .about-company h2 {
   color: white; }
@@ -325,17 +329,6 @@ header {
 
 .location h4 {
   color: white; }
-
-footer p {
-  margin-top: 30px;
-  background-color: black; }
-
-.footer__link {
-  display: flex;
-  flex-flow: row wrap;
-  align-items: center;
-  justify-content: space-around;
-  margin: 30px 0; }
 
 .copyright {
   width: 100%;
@@ -349,7 +342,6 @@ footer p {
   align-items: center;
   justify-content: space-evenly;
   height: 85px;
-  border-radius: 25%;
   overflow: hidden; }
 
 .fa__face {
@@ -371,8 +363,6 @@ footer p {
 
 /* madia queries footer */
 @media (max-width: 768px) {
-  .footer__link {
-    flex-direction: column; }
   .footer {
     display: flex;
     flex-flow: row wrap;
@@ -381,9 +371,10 @@ footer p {
     border: 1px solid #2407e0;
     height: auto;
     margin: 50px auto; }
+    .footer__link {
+      flex-direction: column; }
   .fa__social {
-    border-radius: 23%;
-    height: 75px; } }
+    overflow: hidden; } }
 
 @media (max-width: 400px) {
   .footer {
@@ -432,7 +423,7 @@ main,
 .footer {
   grid-area: footer; }
 
-/* galeria bootstrap */
+/* galeria */
 .link__call {
   color: #1fafd1;
   text-decoration: none; }
@@ -720,10 +711,6 @@ iframe {
   border: 0;
   height: 100%; }
 
-/* .section__dos__quienessomos {
-    display: flex;
-    flex-wrap: wrap;
-} */
 .section__dos__quienessomos p {
   padding: 25px;
   color: get-map(("w": white, "b": black, "t1": 1em, "t2": 1.5em, "t3": 2em, "t4": 2.5em), w); }
@@ -752,8 +739,7 @@ iframe {
     padding: 0; }
   .quienessomos__p {
     margin-top: 100px;
-    background: black;
-    /*  font-size:map-get($letras,t3); */ } }
+    background: black; } }
 
 /* main carrousel de quienes somos */
 .carousel-inner {
@@ -770,14 +756,15 @@ iframe {
 /* Contacto */
 .container {
   color: gray; }
-
-.container__form {
-  padding-bottom: 50px; }
-  .container__form h1 {
-    color: white;
-    text-align: center;
-    margin-top: 50px;
-    margin-bottom: 100px; }
+  .container__btn {
+    display: flex; }
+  .container__form {
+    padding-bottom: 50px; }
+    .container__form h1 {
+      color: white;
+      text-align: center;
+      margin-top: 50px;
+      margin-bottom: 100px; }
 
 .form-floating {
   margin-bottom: 15px; }
@@ -789,14 +776,8 @@ iframe {
   justify-content: center;
   margin: 20px 0; }
 
-.form-floating {
-  width: 100%; }
-
 .form__opcion {
   color: white; }
-
-.container__btn {
-  display: flex; }
 
 .btn__contacto {
   display: inline-block;

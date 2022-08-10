@@ -104,7 +104,6 @@ p {
     width: 60px;
 }
 /* container header */
-
 .header {
     &__container{
     background: $header-background;
@@ -142,16 +141,16 @@ p {
 }
 .header__li {
     display: contents;
-}
-.header__li a {
-    display: flex;
-    align-items: end;
-    text-decoration: none;
-}
-.header__li a p {
-    color: lightgray;
-    margin-bottom: 15px;
-    margin-left: 25px;
+        a {
+        display: flex;
+        align-items: end;
+        text-decoration: none;
+            p {
+            color: lightgray;
+            margin-bottom: 15px;
+            margin-left: 25px;
+        }
+    }
 }
 .descarga__apk {
     margin: 0;
@@ -328,24 +327,27 @@ header {
     flex-wrap: wrap;
     justify-content: center;
 }
-
 .tab-content>.active {
     display: none;
 }
-
-
 /* footer */
 .footer {
     background: #152F4F;
     border: $border-main;
     padding: 50px;
     color: white;
-    &__h2-modificador {
-        margin-top: 50px;
-    }
+        &__h2-modificador {
+            margin-top: 50px;
+        }
+        &__link {
+            @include flex(flex, row, wrap, center, space-around);
+            margin: 30px 0;
+        }
 }
-.about-company h2 {
-    color: map-get($letras, w);
+.about-company {
+    h2 {
+        color: map-get($letras, w);
+    }
 }
 .direccion__caba {
     display: flex;
@@ -356,37 +358,31 @@ header {
         color: map-get($letras, w);
     }
 }
-footer p {
-    margin-top: 30px;
-    background-color: black;
-}
-.footer__link {
-    @include flex(flex, row, wrap, center, space-around);
-    margin: 30px 0;
-}
 .copyright {
     width: 100%;
     height: 50px;
     margin-bottom: 60px;
     text-align: center;
 }
-.fa__social {
-    @include flex(flex, column, wrap, center, space-evenly);
-    height: 85px;
-    border-radius: 25%;
-    overflow: hidden;
+.fa {
+    &__social {
+        @include flex(flex, column, wrap, center, space-evenly);
+        height: 85px;
+        overflow: hidden;
+    }
+    &__face {
+        background-color: map-get($letras, w);
+        color: #0055fff0;
+        border-radius: 50%;
+        z-index: 15;
+    }
+    &__insta {
+        border-radius: 41%;
+        color: white;
+        background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
+    }
 }
-.fa__face {
-    background-color: map-get($letras, w);
-    color: #0055fff0;
-    border-radius: 50%;
-    z-index: 15;
-}
-.fa__insta {
-    border-radius: 41%;
-    color: white;
-    background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
-}
+
 .boton__consultar {
     position: absolute;
     bottom: 10px;
@@ -395,18 +391,17 @@ footer p {
 }
 /* madia queries footer */
 @media (max-width: 768px) {
-    .footer__link {
-        flex-direction: column;
-    }
     .footer {
         @include flex (flex, row, wrap, center, center);
         border: $border-main;
         height: auto;
         margin: 50px auto;
+            &__link {
+            flex-direction: column;
+        }
     }
     .fa__social {
-        border-radius: 23%;
-        height: 75px;
+        overflow: hidden;
     }
 }
 @media (max-width: 400px) {
@@ -426,7 +421,6 @@ main,
         opacity: 0;
         transform: rotateX(-15deg);
     }
-
     to {
         opacity: 1;
         transform: rotateX(0);

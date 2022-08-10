@@ -1,5 +1,4 @@
 /* grid quienes somos */
-
 .main__quienessomos {
     grid-area: main;
 }
@@ -14,7 +13,6 @@
     @extend %main ;
 }
 .quienessomos__p
-/* p ambos section */
     {
     width: 100%;
     margin: auto auto;
@@ -25,7 +23,6 @@
     background: black;
 }
 .quienessomos__iframe
-/* iframe ambos section */
     {
     border-top: 2px solid blue;
     border-bottom: 2px solid blue;
@@ -38,11 +35,6 @@ iframe {
     border: 0;
     height: 100%;
 }
-/* .section__dos__quienessomos {
-    display: flex;
-    flex-wrap: wrap;
-} */
-
 .section__dos__quienessomos p {
     padding: 25px;
     color: get-map($letras, w);
@@ -77,7 +69,6 @@ iframe {
     .quienessomos__p {
         margin-top: 100px;
         background: black;
-       /*  font-size:map-get($letras,t3); */
     }
 }
 /* main carrousel de quienes somos */
@@ -85,7 +76,6 @@ iframe {
     width: 90%;
     margin: 0 auto;
 }
-
 .carousel-item {
     border: $border-main;
 }

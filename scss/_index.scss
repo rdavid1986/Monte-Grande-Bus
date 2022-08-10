@@ -1,5 +1,4 @@
 /* index grid */
-
 .header__container {
     grid-area: header;
 }
@@ -12,7 +11,7 @@
 .footer {
     grid-area: footer;
 }
-/* galeria bootstrap */
+/* galeria */
 .link__call {
     color: #1fafd1;
     text-decoration: none;
@@ -116,7 +115,6 @@
     }
 }
 @media (min-width: 768px) {
-
     #galeria9 {
         height: 97%;
     }
@@ -124,7 +122,6 @@
         height: 96%;
     }
 }
-
 @media (max-width: 768px) {
     .item__galeria {
         margin-top: 20px;

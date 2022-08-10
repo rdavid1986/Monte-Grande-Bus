@@ -1,20 +1,22 @@
 /* grid contactos */
-
 .main__contacto {
     grid-area: main;
 }
 /* Contacto */
-.container {
+.container{
     color: gray;
-}
-.container__form {
-    @extend %main;
-    padding-bottom: 50px;
-    h1 {
-        color: map-get($letras, w);
-        text-align: center;
-        margin-top: 50px;
-        margin-bottom: 100px;
+    &__btn {
+    display: flex;
+    }
+    &__form {
+        @extend %main;
+        padding-bottom: 50px;
+        h1 {
+            color: map-get($letras, w);
+            text-align: center;
+            margin-top: 50px;
+            margin-bottom: 100px;
+        }
     }
 }
 .form-floating {
@@ -24,14 +26,8 @@
     @include flex( flex, row, wrap, center ,center );
     margin: 20px 0; 
 }
-.form-floating {
-    width: 100%;
-}
 .form__opcion {
     color: map-get($letras,w);
-}
-.container__btn {
-    display: flex;
 }
 .btn__contacto {
     @extend %boton;
