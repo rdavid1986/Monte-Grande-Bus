@@ -355,7 +355,8 @@ footer p {
 .fa__face {
   color: #0055fff0;
   background-color: white;
-  border-radius: 19%; }
+  border-radius: 19%;
+  z-index: 15; }
 
 .fa__insta {
   border-radius: 25%;
@@ -380,13 +381,7 @@ footer p {
     height: auto;
     margin: 50px auto; }
   .fa__social {
-    display: flex;
-    flex-flow: column wrap;
-    align-items: center;
-    justify-content: space-evenly;
-    color: white;
-    height: 75px;
-    overflow: hidden; } }
+    height: 75px; } }
 
 @media (max-width: 400px) {
   .footer {

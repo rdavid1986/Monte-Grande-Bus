@@ -379,7 +379,8 @@ footer p {
 .fa__face {
     color: #0055fff0;
     background-color: map-get($letras, w);
-    border-radius: 19%
+    border-radius: 19%;
+    z-index: 15;
 }
 .fa__insta {
     border-radius: 25%;
