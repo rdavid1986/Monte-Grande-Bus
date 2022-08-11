@@ -345,9 +345,10 @@ header {
   overflow: hidden; }
 
 .fa__face {
+  display: table;
   background-color: white;
   color: #0055fff0;
-  border-radius: 50%;
+  border-radius: 25%;
   z-index: 15; }
 
 .fa__insta {
@@ -373,7 +374,7 @@ header {
     margin: 50px auto; }
     .footer__link {
       flex-direction: column; }
-  .fa__social {
+  .fa__face {
     overflow: hidden; } }
 
 @media (max-width: 400px) {
