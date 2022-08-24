@@ -61,6 +61,10 @@
     .container__servicio__row__h {
         margin-bottom: 40px;
     }
+    .iframe__creado {
+    height: 700px;
+    width: 90%;
+    }
 }
 @media (max-width: 768px) {
     .container,
@@ -103,7 +107,7 @@
     }
     .iframe__creado {
     height: 700px;
-    width: 100%;
+    width: 90%;
     }
     .col-ms-12 {
         width: 100%;
