@@ -13,12 +13,12 @@
   .button__reserva a, .btn__contacto a {
     color: white; }
 
-#galeria, .container__servicios, .container__servicio__capital, .main__reserva, .container__main__quienes__somos, .container__form {
+.container__servicios, .container__servicio__capital, #galeria, .main__reserva, .container__main__quienes__somos, .container__form {
   background: linear-gradient(to bottom right, #1fafd1, #05138e, #05138ec2, #1fafd1);
   border: 2px solid blue;
   color: white;
-  margin-top: 50px;
-  padding-top: 50px; }
+  margin-top: 20px;
+  padding-top: 20px; }
 
 /* map */
 /* general */
@@ -40,7 +40,6 @@ body {
 /* Body grid */
 body {
   display: grid;
-  gap: 10px;
   grid-template-columns: 100%;
   grid-template-rows: auto;
   grid-template-areas: "header" "nav" "main" "footer"; }
@@ -411,6 +410,92 @@ main,
     transform: rotateY(0deg);
     transform: scale(1); } }
 
+/* grid servicios */
+.main__servicios {
+  grid-area: main; }
+
+/* servicos */
+.container__servicios {
+  padding: 50px; }
+  .container__servicios__h2 {
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 30px; }
+
+.column__servicios_margintop {
+  margin-top: 40px; }
+
+/* container servicio capital */
+.container__servicio__capital {
+  padding: 50px; }
+  .container__servicio__capital__h2 {
+    margin-top: 30px;
+    text-align: center; }
+  .container__servicio__capital__row {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    justify-content: space-around;
+    margin-top: 50px; }
+  .container__servicio__capital__ul {
+    margin-top: 50px;
+    list-style: none; }
+
+.servicios__mapa {
+  height: 550px;
+  width: 400px; }
+  .servicios__mapa__1 {
+    margin-top: 88px; }
+
+/* media queris servicios */
+@media (max-width: 1200px) {
+  .container__servicio__capital__row {
+    display: flex;
+    flex-flow: column 0;
+    align-items: center;
+    justify-content: space-around; }
+  .container__servicio__row__h {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px; } }
+
+@media (max-width: 768px) {
+  .container,
+  .container-md,
+  .container-sm {
+    max-width: 720px;
+    display: flex;
+    flex-wrap: wrap; }
+  .container__servicio__capital {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: space-around;
+    text-decoration: none;
+    padding: 0; }
+    .container__servicio__capital__ul {
+      margin-left: -50px; }
+  .servicios__mapa {
+    max-width: 360px;
+    padding: 40px; } }
+
+@media (max-width: 600px) {
+  .container__servicios {
+    display: block;
+    padding: 10px; }
+  .container__servicios__row {
+    margin-top: 550px; }
+  .iframe__creado {
+    height: 700px;
+    width: 100%; }
+  .col-ms-12 {
+    width: 100%;
+    text-align: center; } }
+
+.iframe__creado {
+  height: 700px;
+  width: 80%; }
+
 /* index grid */
 .header__container {
   grid-area: header; }
@@ -541,81 +626,6 @@ main,
   .col__galeria__6 {
     display: flex;
     justify-content: space-around; } }
-
-/* grid servicios */
-.main__servicios {
-  grid-area: main; }
-
-/* servicos */
-.container__servicios {
-  padding: 50px; }
-  .container__servicios__h2 {
-    text-align: center;
-    margin-bottom: 50px;
-    margin-top: 30px; }
-
-.column__servicios_margintop {
-  margin-top: 40px; }
-
-/* container servicio capital */
-.container__servicio__capital {
-  padding: 50px; }
-  .container__servicio__capital__h2 {
-    margin-top: 30px;
-    text-align: center; }
-  .container__servicio__capital__row {
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-    justify-content: space-around; }
-  .container__servicio__capital__ul {
-    margin-top: 50px;
-    list-style: none; }
-  .container__servicio__capital__row h4 {
-    text-align: center; }
-
-.servicios__mapa {
-  height: 550px;
-  width: 400px; }
-  .servicios__mapa__1 {
-    margin-top: 88px; }
-
-/* media queris servicios */
-@media (max-width: 1200px) {
-  .container__servicio__capital__row {
-    display: flex;
-    flex-flow: column wrap;
-    align-items: center;
-    justify-content: space-around; }
-  .container__servicio__row__h {
-    text-align: center;
-    margin-top: 40px;
-    margin-bottom: 40px; } }
-
-@media (max-width: 768px) {
-  .container,
-  .container-md,
-  .container-sm {
-    max-width: 720px;
-    display: flex;
-    flex-wrap: wrap; }
-  .container__servicio__capital {
-    display: flex;
-    flex-flow: column wrap;
-    align-items: center;
-    justify-content: space-around;
-    text-decoration: none;
-    padding: 0; }
-  .servicios__mapa {
-    max-width: 360px;
-    padding: 40px; } }
-
-@media (max-width: 600px) {
-  .container__servicios {
-    display: block;
-    padding: 10px; }
-  .container__servicios__row {
-    margin-top: 550px; } }
 
 /* grid reserva tu lugar */
 .main__reserva {
