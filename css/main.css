@@ -428,6 +428,8 @@ main,
 /* container servicio capital */
 .container__servicio__capital {
   padding: 50px; }
+  .container__servicio__capital h1 {
+    margin-top: 25px; }
   .container__servicio__capital__h2 {
     margin-top: 30px;
     text-align: center; }
