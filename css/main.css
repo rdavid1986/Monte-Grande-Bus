@@ -487,6 +487,8 @@ main,
     .container__servicio__capital__ul {
       margin-left: -50px;
       text-align: center; }
+  .container__servicio__row__h {
+    margin-top: 20px; }
   .servicios__mapa {
     max-width: 360px;
     padding: 40px; }
