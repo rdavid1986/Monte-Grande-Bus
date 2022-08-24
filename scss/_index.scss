@@ -74,6 +74,7 @@
         @include flex (flex, column, wrap, center, space-around);
         text-decoration: none;
         padding: 0;
+        padding-bottom: 30px;
         &__ul {
             margin-left: -50px;
             text-align: center;
