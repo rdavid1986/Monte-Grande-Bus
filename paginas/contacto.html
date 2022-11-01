@@ -55,12 +55,13 @@
 					<a href="#" class="nav-link active">Contacto</a>
 				</li>
 			</ul>
-			<a href="#nav" class="nav__hamburguer">
-				<img src="../assets/menu.svg" class="nav__icon">
-			</a>
-			<a href="#" class="nav__close">
-				<img src="../assets/close.svg" class="nav__icon">
-			</a>
+				<a href="#nav" class="nav__hamburguer">
+					<img src="../assets/menu.svg" class="nav__icon">
+				</a>
+				<a href="#" class="nav__close">
+					<img src="../assets/close.svg" class="nav__icon">
+				</a>
+				
 		</nav>
 	</header>
 <!-- form bootstrap -->
@@ -96,6 +97,13 @@
 			<label for="telefono">Numero de telefono*</label>
 		</div>
 	</div>
+
+	<div class="col-sm-12 col-lg-8 ">
+		<div class="form-floating ">
+			<input name="pasajeros" type="number" requiered class="form-control" id="pasajeros" placeholder="Cantidad de pasajeros">
+			<label for="pasajeros">Cantidad de pasajeros</label>
+		</div>
+	</div>
   
 	<div class="col-sm-12 col-lg-8">
 		<div class="form-floating">
@@ -111,7 +119,7 @@
 		</div>
 	</div>
 		
-	<textarea name="message" class=" col-sm-12 col-lg-8" placeholder="Escriba su mansaje aqui" id="message" style="height: 200px"></textarea>
+	<textarea name="message" class=" col-sm-12 col-lg-8" placeholder="Describa su solicitud de servicio" id="message" style="height: 200px"></textarea>
 
 	<button class="btn__contacto"  type="submit" id="button" value="Enviar mail">Enviar</button>
  	<!-- <input class="btn__contacto" type="submit" id="button" value="Enviar mail"> -->
@@ -122,44 +130,53 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 col-xs-12 about-company">
-                    <h2>Monte Grande Bus</h2>
-                    <p>
-                        Copyright © 2019 Monte Grande Bus.
-                    </p>
-                    <p>
-                        Todos los derechos reservados.
-                    </p>
-                    <p>
-                    Este producto está protegido por derechos de autor y se distribuye bajo licencias que restringen la copia, distribución y descompilación. </p>
-                </div>
-                <div class="col-lg-4 col-xs-12 location">
-                    <h4 class="mt-lg-0 mt-sm-4">Direccion</h4>
-                    <p>Monte grande, General las Heras 70</p>
-                    <h4 class="mt-lg-0 mt-sm-4">Telefono</h4>
-                    <p>
-                        <i class="fa fa-phone"> </i>(011) 4281-7300
-                    </p>
-                    <p>
-                        <i class="fa fa-phone"></i> (011) 4290-6212
-                    </p>
-                    <br>
-                    <p>
-                        <i class="fa fa-envelope-o"></i> info@mgbus.com.ar
-                    </p>
-                </div>
-                <div class="col-lg-4 col-xs-12 location">
-                    <h4 class="mt-lg-0 mt-sm-4 direccion__caba">Direccion CABA</h4>
-                    <p>Terminal de combis,Cerrito y Sarmiento (Obelisco)</p>
-                    <h4 class="mt-lg-0 mt-sm-4">Telefono</h4>
-                    <p>
-                    <i class="fa fa-phone-square" aria-hidden="true"></i>(011) 4281-7300
-                    </p>
-                    <br>
-                    <br>
-                    <p>
-                    <i class="fa fa-envelope-o "></i> bus@gmail.com
-                    </p>
-                </div>
+					<h2>Monte Grande Bus</h2>
+					<p>
+						Copyright © 2019 Monte Grande Bus.
+					</p>
+					<p>
+						Todos los derechos reservados.
+					</p>
+					<p>
+					Este producto está protegido por derechos de autor y se distribuye bajo licencias que restringen la copia, distribución y descompilación. </p>
+				</div>
+				<div class="col-lg-4 col-xs-12 location">
+					<h4 class="mt-lg-0 mt-sm-4">Direccion</h4>
+					<p>Monte grande, General las Heras 70</p>
+					<h4 class="mt-lg-0 mt-sm-4">Telefono</h4>
+					<p>
+						<i class="fa fa-phone"></i><a href="tel:01142817300" class="link__call">
+							(011) 4281-7300</a>
+					</p>
+					<p>
+						<i class="fa fa-phone"></i><a href="tel:0114290-6212" class="link__call">(011) 4290-6212</a>
+					</p>
+					<p>
+						<i class="fa fa-envelope-o"></i>  montegrandebus@outlook.com
+					</p>
+				</div>
+				<div class="col-lg-4 col-xs-12 location">
+					<h4 class="mt-lg-0 mt-sm-4 direccion__caba">Direccion CABA</h4>
+					<p>Terminal de combis, Cerrito y Sarmiento (Terminal obelisco)</p>
+					<h4 class="mt-lg-0 mt-sm-4">Telefono</h4>
+					<p>
+					<i class="fa fa-phone-square" aria-hidden="true"></i><a href="tel:0114322-0116" class="link__call">
+						(011) 4281-7300</a>
+					</p>
+					<p>
+					<i class="fa fa-envelope-o "></i> montegrandebus@outlook.com
+					</p>
+			
+				</div>
+
+				<div class="col-lg-4 col-xs-12 location">
+					<h4 class="mt-lg-0 mt-sm-4 direccion__caba">Whatsapp</h4>
+					<p>
+					<i class="fa fa-whatsapp" aria-hidden="true"></i> <a href="https://api.whatsapp.com/send?phone=541122570480" class="whatsapp__anchor">(11-2257-0480)</a>
+					</p>
+					<br>
+					<br>
+				</div> 
                 <div class=" col-12 links">
                     <h4 class="mt-lg-0 mt-sm-3"></h4>
                     <ul class="footer__link">

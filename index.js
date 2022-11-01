@@ -8,24 +8,25 @@ document.getElementById('form')
     const from_name = document.getElementById("from_name").value;
     const email_id = document.getElementById("email_id").value;
     const message = document.getElementById("message").value;
+    const pasajeros = document.getElementById("pasajeros").value;
 
         from_name == "" && Swal.fire({
             icon: 'error',
             title: 'Oops...',
-            text: 'Para poder enviar el mail debe completar el campo nombre'
+            text: 'Para poder enviar el mail debe completar el campo "nombre"'
         });
         email_id == "" && Swal.fire({
             icon: 'error',
             title: 'Oops...',
-            text: 'Para poder enviar el mail debe completar el campo email'
+            text: 'Para poder enviar el mail debe completar el campo "email"'
         });
         message == "" && Swal.fire({
             icon: 'error',
             title: 'Oops...',
-            text: 'Para poder enviar el mail debe completar el campo mensaje'
+            text: 'Para poder enviar el mail debe completar el campo "Describa su solicitud de servicio"'
         }) 
         
-        if(from_name && email_id  && message != "") {
+        if(from_name && email_id  && message && pasajeros != "") {
     
         const btn = document.getElementById('button');
         

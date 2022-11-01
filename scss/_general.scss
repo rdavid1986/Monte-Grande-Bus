@@ -267,9 +267,10 @@ p {
         --state-hamburguer: scale(0);
     }
     .logomgb__768 {
+        animation: transitionInLogo 1.3s;
         display: unset;
         position: absolute;
-        bottom: 240px;
+        bottom: 380px;
     }
     .nav__hamburguer,
     .nav__close {
@@ -439,4 +440,11 @@ main,
         transform: rotateY(0deg);
         transform: scale(1);
     }
+}
+/* fa de WahtssApp */
+.fa-whatsapp {
+    color : white;
+}
+.whatsapp__anchor {
+    color :#03c100;
 }
