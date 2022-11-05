@@ -875,7 +875,8 @@ textarea {
 .main__horario__p {
   padding: 30px;
   border: 1px solid;
-  border-color: red; }
+  border-color: red;
+  margin-top: 30px; }
 
 .main__horario__h3 {
   color: white;
@@ -899,9 +900,6 @@ textarea {
     text-align: initial; }
   .col-sm-6 {
     margin-bottom: 25px; } }
-
-.row p {
-  height: 5px; }
 
 @media (max-width: 600px) {
   .main__horario__row {
