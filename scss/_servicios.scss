@@ -21,6 +21,10 @@
 .mainpadding {
     padding-top: 50px;
 }
+.button__servicio {
+    text-decoration: none;
+    width: 300px;
+}
 #galeria {
     @extend %main;
     padding-bottom: 50px;

@@ -43,7 +43,7 @@ document.getElementById('form')
                 icon: 'success',
                 title: 'Se a enviado el mail',
                 showConfirmButton: false,
-                timer: 3000
+                timer: 500
             });
         }, (err) => {
             btn.value = 'Enviar';

@@ -138,6 +138,9 @@ p {
 .logomgb__768 {
     display: none;
 }
+.logoplaystore__768 {
+    display: none;
+}
 .header__li {
     display: contents;
         a {
@@ -258,8 +261,8 @@ p {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        align-items: flex-start;
         grid-template-columns: repeat(2, max-content);
+        align-content: flex-end;
     }
     .nav:target {
         --state-menu: translate(0);
@@ -269,8 +272,30 @@ p {
     .logomgb__768 {
         animation: transitionInLogo 1.3s;
         display: unset;
-        position: absolute;
-        bottom: 380px;
+        bottom: 220px;
+    }
+ 
+    .logoplaystore__menu {
+        animation: transitionInLogo 1.3s;
+        background-color: black;
+        width: 239px;
+        border-radius: 5px;
+    }
+    .logoplaystore__menu a {
+        text-decoration: none;
+    }
+    .p__logoplaystore {
+        height:63px;
+    }
+    .logoplaystore__768{
+        animation: transitionInLogo 1.3s;
+        display: unset;
+        margin-right: 15px;
+        
+    }
+    .logo-playstore {
+        border-radius: 15%;
+        width: 60px;
     }
     .nav__hamburguer,
     .nav__close {
